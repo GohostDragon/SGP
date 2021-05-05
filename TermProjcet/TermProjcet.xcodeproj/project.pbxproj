@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		53CAF12B065F1925729223C5 /* Pods_TermProjcet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF1270838BCB72C806F646 /* Pods_TermProjcet.framework */; };
+		A1E3A5E92643062D00A0F454 /* hello.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A5E82643062D00A0F454 /* hello.gif */; };
 		A1EC5C5426429212002B2639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C5326429212002B2639 /* AppDelegate.swift */; };
 		A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C5526429212002B2639 /* SceneDelegate.swift */; };
 		A1EC5C5826429212002B2639 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C5726429212002B2639 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		091D9DFE51906EAC7C05B1CE /* Pods-TermProjcet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TermProjcet.release.xcconfig"; path = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet.release.xcconfig"; sourceTree = "<group>"; };
 		5DFF1270838BCB72C806F646 /* Pods_TermProjcet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TermProjcet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E3A5E82643062D00A0F454 /* hello.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello.gif; sourceTree = "<group>"; };
 		A1EC5C5026429212002B2639 /* TermProjcet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermProjcet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EC5C5326429212002B2639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1EC5C5526429212002B2639 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		A1EC5C5226429212002B2639 /* TermProjcet */ = {
 			isa = PBXGroup;
 			children = (
+				A1E3A5E82643062D00A0F454 /* hello.gif */,
 				A1EC5C5326429212002B2639 /* AppDelegate.swift */,
 				A1EC5C5526429212002B2639 /* SceneDelegate.swift */,
 				A1EC5C5726429212002B2639 /* ViewController.swift */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EC5C6026429213002B2639 /* LaunchScreen.storyboard in Resources */,
+				A1E3A5E92643062D00A0F454 /* hello.gif in Resources */,
 				A1EC5C5D26429213002B2639 /* Assets.xcassets in Resources */,
 				A1EC5C5B26429212002B2639 /* Main.storyboard in Resources */,
 			);

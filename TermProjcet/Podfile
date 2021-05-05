@@ -8,5 +8,7 @@ target 'TermProjcet' do
   # Pods for TermProjcet
 
   pod 'FSCalendar'
+  pod 'DropDown'
+  pod 'Gifu'
 
 end
