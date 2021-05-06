@@ -16,6 +16,7 @@
 		A1EC5C5D26429213002B2639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EC5C5C26429213002B2639 /* Assets.xcassets */; };
 		A1EC5C6026429213002B2639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EC5C5E26429213002B2639 /* LaunchScreen.storyboard */; };
 		A1EC5C712642AB2F002B2639 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C702642AB2F002B2639 /* InfoViewController.swift */; };
+		A1F417D22644472C00B5F571 /* SchoolSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F417D12644472C00B5F571 /* SchoolSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A1EC5C5F26429213002B2639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1EC5C6126429213002B2639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1EC5C702642AB2F002B2639 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A1F417D12644472C00B5F571 /* SchoolSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolSearchViewController.swift; sourceTree = "<group>"; };
 		DE8655203613EF3111E14C51 /* Pods-TermProjcet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TermProjcet.debug.xcconfig"; path = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				A1EC5C5E26429213002B2639 /* LaunchScreen.storyboard */,
 				A1EC5C6126429213002B2639 /* Info.plist */,
 				A1EC5C702642AB2F002B2639 /* InfoViewController.swift */,
+				A1F417D12644472C00B5F571 /* SchoolSearchViewController.swift */,
 			);
 			path = TermProjcet;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EC5C5826429212002B2639 /* ViewController.swift in Sources */,
+				A1F417D22644472C00B5F571 /* SchoolSearchViewController.swift in Sources */,
 				A1EC5C5426429212002B2639 /* AppDelegate.swift in Sources */,
 				A1EC5C712642AB2F002B2639 /* InfoViewController.swift in Sources */,
 				A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */,
