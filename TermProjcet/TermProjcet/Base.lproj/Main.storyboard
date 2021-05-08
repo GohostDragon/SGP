@@ -8,21 +8,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--School Info View Controller-->
         <scene sceneID="441-cr-O89">
             <objects>
-                <viewController id="8zs-7m-KzI" sceneMemberID="viewController">
+                <viewController id="8zs-7m-KzI" customClass="SchoolInfoViewController" customModule="TermProjcet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4tz-f0-17A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qIq-3N-tjC">
+                                <rect key="frame" x="20" y="109" width="374" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-ox-Edi">
+                                <rect key="frame" x="20" y="373" width="152" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9sd-oL-7fd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="btG-hN-4Hc">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0Pm-7Z-Ezj"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="0Pm-7Z-Ezj">
+                            <connections>
+                                <segue destination="iif-g3-hEM" kind="unwind" unwindAction="doneToSchoolSearchViewControllerWithSegue:" id="c66-IG-lLd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="qIq-3N-tjC" id="g7P-fc-mII"/>
+                        <outlet property="sNameText" destination="Wtz-ox-Edi" id="f8g-Lg-G5A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Smv-Qb-ybe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="iif-g3-hEM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3349.275362318841" y="-733.25892857142856"/>
         </scene>
@@ -140,7 +162,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="205-th-kkq" kind="show" id="axO-hW-ogo"/>
+                                            <segue destination="205-th-kkq" kind="presentation" identifier="segueToSchoolInfo" modalPresentationStyle="fullScreen" id="yEE-nG-TjX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

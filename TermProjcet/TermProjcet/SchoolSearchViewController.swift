@@ -30,8 +30,23 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
     var element = NSString()
     
     var title1 = NSMutableString()
-    var date = NSMutableString()
+    var locationName = NSMutableString()
+    var edu = NSMutableString()
+    var code = NSMutableString()
+    var engTitle = NSMutableString()
+    var level = NSMutableString()
+    var pbpr = NSMutableString()
+    var addr = NSMutableString()
+    var tel = NSMutableString()
+    var site = NSMutableString()
+    var jender = NSMutableString()
+    var fax = NSMutableString()
+    var kind = NSMutableString()
+    var estdate = NSMutableString()
+    var holiday = NSMutableString()
     
+    @IBAction func doneToSchoolSearchViewController(segue:UIStoryboardSegue){
+    }
     
     @IBAction func eduSelecet(_ sender: Any) {
         edudropDown.show()
@@ -103,10 +118,38 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
         {
             elements = NSMutableDictionary()
             elements = [:]
+            
             title1 = NSMutableString()
+            locationName = NSMutableString()
+            edu = NSMutableString()
+            code = NSMutableString()
+            engTitle = NSMutableString()
+            level = NSMutableString()
+            pbpr = NSMutableString()
+            addr = NSMutableString()
+            tel = NSMutableString()
+            site = NSMutableString()
+            jender = NSMutableString()
+            fax = NSMutableString()
+            kind = NSMutableString()
+            estdate = NSMutableString()
+            holiday = NSMutableString()
+            
             title1 = ""
-            date = NSMutableString()
-            date = ""
+            locationName = ""
+            edu = ""
+            code = ""
+            engTitle = ""
+            level = ""
+            pbpr = ""
+            addr = ""
+            tel = ""
+            site = ""
+            jender = ""
+            fax = ""
+            kind = ""
+            estdate = NSMutableString()
+            holiday = ""
             
         }
     }
@@ -114,8 +157,47 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         if element.isEqual(to: "SCHUL_NM") {
             title1.append(string)
-        } else if element.isEqual(to: "ORG_RDNMA") {
-            date.append(string)
+        } else if element.isEqual(to: "LCTN_SC_NM") {
+            locationName.append(string)
+        }
+        else if element.isEqual(to: "ATPT_OFCDC_SC_NM") {
+            edu.append(string)
+        }
+        else if element.isEqual(to: "SD_SCHUL_CODE") {
+            code.append(string)
+        }
+        else if element.isEqual(to: "ENG_SCHUL_NM") {
+            engTitle.append(string)
+        }
+        else if element.isEqual(to: "SCHUL_KND_SC_NM") {
+            level.append(string)
+        }
+        else if element.isEqual(to: "FOND_SC_NM") {
+            pbpr.append(string)
+        }
+        else if element.isEqual(to: "ORG_RDNMA") {
+            addr.append(string)
+        }
+        else if element.isEqual(to: "ORG_TELNO") {
+            tel.append(string)
+        }
+        else if element.isEqual(to: "HMPG_ADRES") {
+            site.append(string)
+        }
+        else if element.isEqual(to: "COEDU_SC_NM") {
+            jender.append(string)
+        }
+        else if element.isEqual(to: "ORG_FAXNO") {
+            fax.append(string)
+        }
+        else if element.isEqual(to: "HS_SC_NM") {
+            kind.append(string)
+        }
+        else if element.isEqual(to: "FOND_YMD") {
+            estdate.append(string)
+        }
+        else if element.isEqual(to: "FOAS_MEMRD") {
+            holiday.append(string)
         }
     }
     
@@ -124,10 +206,48 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
             if !title1.isEqual(nil){
                 elements.setObject(title1, forKey: "SCHUL_NM" as NSCopying)
             }
-            if !date.isEqual(nil){
-                elements.setObject(date, forKey: "ORG_RDNMA" as NSCopying)
+            if !locationName.isEqual(nil){
+                elements.setObject(locationName, forKey: "LCTN_SC_NM" as NSCopying)
             }
-            
+            if !edu.isEqual(nil){
+                elements.setObject(edu, forKey: "ATPT_OFCDC_SC_NM" as NSCopying)
+            }
+            if !code.isEqual(nil){
+                elements.setObject(code, forKey: "SD_SCHUL_CODE" as NSCopying)
+            }
+            if !engTitle.isEqual(nil){
+                elements.setObject(engTitle, forKey: "ENG_SCHUL_NM" as NSCopying)
+            }
+            if !level.isEqual(nil){
+                elements.setObject(level, forKey: "SCHUL_KND_SC_NM" as NSCopying)
+            }
+            if !pbpr.isEqual(nil){
+                elements.setObject(pbpr, forKey: "FOND_SC_NM" as NSCopying)
+            }
+            if !addr.isEqual(nil){
+                elements.setObject(addr, forKey: "ORG_RDNMA" as NSCopying)
+            }
+            if !tel.isEqual(nil){
+                elements.setObject(tel, forKey: "ORG_TELNO" as NSCopying)
+            }
+            if !site.isEqual(nil){
+                elements.setObject(site, forKey: "HMPG_ADRES" as NSCopying)
+            }
+            if !jender.isEqual(nil){
+                elements.setObject(jender, forKey: "COEDU_SC_NM" as NSCopying)
+            }
+            if !fax.isEqual(nil){
+                elements.setObject(fax, forKey: "ORG_FAXNO" as NSCopying)
+            }
+            if !kind.isEqual(nil){
+                elements.setObject(kind, forKey: "HS_SC_NM" as NSCopying)
+            }
+            if !estdate.isEqual(nil){
+                elements.setObject(estdate, forKey: "FOND_YMD" as NSCopying)
+            }
+            if !holiday.isEqual(nil){
+                elements.setObject(holiday, forKey: "FOAS_MEMRD" as NSCopying)
+            }
             posts.add(elements)
         }
     }
@@ -144,6 +264,33 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
         return cell
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToSchoolInfo" {
+            if let sgCell = sender as? UITableViewCell {
+                let indexPath = schoolTableView.indexPath(for: sgCell)
+                let sctitle = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "SCHUL_NM") as! NSString as String
+                let sclocationName = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "LCTN_SC_NM") as! NSString as String
+                let scedu = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "ATPT_OFCDC_SC_NM") as! NSString as String
+                let sccode = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "SD_SCHUL_CODE") as! NSString as String
+                let scengTitle = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "ENG_SCHUL_NM") as! NSString as String
+                let sclevel = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "SCHUL_KND_SC_NM") as! NSString as String
+                let scpbpr = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "FOND_SC_NM") as! NSString as String
+                let scaddr = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "ORG_RDNMA") as! NSString as String
+                let sctel = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "ORG_TELNO") as! NSString as String
+                let scsite = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "HMPG_ADRES") as! NSString as String
+                let scjender = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "COEDU_SC_NM") as! NSString as String
+                let scfax = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "ORG_FAXNO") as! NSString as String
+                let sckind = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "HS_SC_NM") as! NSString as String
+                let scestdate = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "FOND_YMD") as! NSString as String
+                let scholiday = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "FOAS_MEMRD") as! NSString as String
+                if let target = segue.destination as? UINavigationController, let schoolInfoViewController = target.topViewController as? SchoolInfoViewController {
+                    let NSschoolcode = String(sccode.filter{!" \n\t\r".contains($0)})
+                    schoolInfoViewController.url = "https://open.neis.go.kr/hub/schoolInfo?KEY=92f8da4aa880435a8d6241dc3d456fb2&Type=&pIndex=1&pSize=100&SD_SCHUL_CODE="+NSschoolcode
+                    schoolInfoViewController.schoolData = CSchool(edu: scedu as String, code: sccode as String, title: sctitle as String, engTitle: scengTitle as String, level: sclevel as String, locationName: sclocationName as String, pbpr: scpbpr as String, addr: scaddr as String, tel: sctel as String, site: scsite as String, jender: scjender as String, fax: scfax as String, kind: sckind as String, estdate: scestdate as String, holiday: scholiday as String)
+                }
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 

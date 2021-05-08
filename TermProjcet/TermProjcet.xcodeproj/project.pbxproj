@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		53CAF12B065F1925729223C5 /* Pods_TermProjcet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF1270838BCB72C806F646 /* Pods_TermProjcet.framework */; };
+		A118A0C72646FA0F00778DCD /* SchoolInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */; };
+		A118A0CA264711A700778DCD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C9264711A600778DCD /* School.swift */; };
+		A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0CC2647146400778DCD /* SchoolMapData.swift */; };
 		A1E3A5E92643062D00A0F454 /* hello.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A5E82643062D00A0F454 /* hello.gif */; };
 		A1EC5C5426429212002B2639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C5326429212002B2639 /* AppDelegate.swift */; };
 		A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C5526429212002B2639 /* SceneDelegate.swift */; };
@@ -22,6 +25,9 @@
 /* Begin PBXFileReference section */
 		091D9DFE51906EAC7C05B1CE /* Pods-TermProjcet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TermProjcet.release.xcconfig"; path = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet.release.xcconfig"; sourceTree = "<group>"; };
 		5DFF1270838BCB72C806F646 /* Pods_TermProjcet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TermProjcet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewController.swift; sourceTree = "<group>"; };
+		A118A0C9264711A600778DCD /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		A118A0CC2647146400778DCD /* SchoolMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMapData.swift; sourceTree = "<group>"; };
 		A1E3A5E82643062D00A0F454 /* hello.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello.gif; sourceTree = "<group>"; };
 		A1EC5C5026429212002B2639 /* TermProjcet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermProjcet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EC5C5326429212002B2639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 				A1EC5C6126429213002B2639 /* Info.plist */,
 				A1EC5C702642AB2F002B2639 /* InfoViewController.swift */,
 				A1F417D12644472C00B5F571 /* SchoolSearchViewController.swift */,
+				A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */,
+				A118A0C9264711A600778DCD /* School.swift */,
+				A118A0CC2647146400778DCD /* SchoolMapData.swift */,
 			);
 			path = TermProjcet;
 			sourceTree = "<group>";
@@ -215,10 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A118A0CA264711A700778DCD /* School.swift in Sources */,
 				A1EC5C5826429212002B2639 /* ViewController.swift in Sources */,
 				A1F417D22644472C00B5F571 /* SchoolSearchViewController.swift in Sources */,
+				A118A0C72646FA0F00778DCD /* SchoolInfoViewController.swift in Sources */,
 				A1EC5C5426429212002B2639 /* AppDelegate.swift in Sources */,
 				A1EC5C712642AB2F002B2639 /* InfoViewController.swift in Sources */,
+				A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */,
 				A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
