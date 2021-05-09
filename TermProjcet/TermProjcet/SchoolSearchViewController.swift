@@ -44,6 +44,7 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
     var kind = NSMutableString()
     var estdate = NSMutableString()
     var holiday = NSMutableString()
+    var educode = NSMutableString()
     
     @IBAction func doneToSchoolSearchViewController(segue:UIStoryboardSegue){
     }
@@ -134,6 +135,7 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
             kind = NSMutableString()
             estdate = NSMutableString()
             holiday = NSMutableString()
+            educode = NSMutableString()
             
             title1 = ""
             locationName = ""
@@ -148,8 +150,9 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
             jender = ""
             fax = ""
             kind = ""
-            estdate = NSMutableString()
+            estdate = ""
             holiday = ""
+            educode = ""
             
         }
     }
@@ -198,6 +201,9 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
         }
         else if element.isEqual(to: "FOAS_MEMRD") {
             holiday.append(string)
+        }
+        else if element.isEqual(to: "ATPT_OFCDC_SC_CODE") {
+            educode.append(string)
         }
     }
     
@@ -248,6 +254,9 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
             if !holiday.isEqual(nil){
                 elements.setObject(holiday, forKey: "FOAS_MEMRD" as NSCopying)
             }
+            if !educode.isEqual(nil){
+                elements.setObject(educode, forKey: "ATPT_OFCDC_SC_CODE" as NSCopying)
+            }
             posts.add(elements)
         }
     }
@@ -283,10 +292,11 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
                 let sckind = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "HS_SC_NM") as! NSString as String
                 let scestdate = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "FOND_YMD") as! NSString as String
                 let scholiday = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "FOAS_MEMRD") as! NSString as String
+                let sceducode = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "ATPT_OFCDC_SC_CODE") as! NSString as String
                 if let target = segue.destination as? UINavigationController, let schoolInfoViewController = target.topViewController as? SchoolInfoViewController {
                     let NSschoolcode = String(sccode.filter{!" \n\t\r".contains($0)})
                     schoolInfoViewController.url = "https://open.neis.go.kr/hub/schoolInfo?KEY=92f8da4aa880435a8d6241dc3d456fb2&Type=&pIndex=1&pSize=100&SD_SCHUL_CODE="+NSschoolcode
-                    schoolInfoViewController.schoolData = CSchool(edu: scedu as String, code: sccode as String, title: sctitle as String, engTitle: scengTitle as String, level: sclevel as String, locationName: sclocationName as String, pbpr: scpbpr as String, addr: scaddr as String, tel: sctel as String, site: scsite as String, jender: scjender as String, fax: scfax as String, kind: sckind as String, estdate: scestdate as String, holiday: scholiday as String)
+                    schoolInfoViewController.schoolData = CSchool(edu: scedu as String, code: sccode as String, title: sctitle as String, engTitle: scengTitle as String, level: sclevel as String, locationName: sclocationName as String, pbpr: scpbpr as String, addr: scaddr as String, tel: sctel as String, site: scsite as String, jender: scjender as String, fax: scfax as String, kind: sckind as String, estdate: scestdate as String, holiday: scholiday as String, educode: sceducode as String)
                 }
             }
         }

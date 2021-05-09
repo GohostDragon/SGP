@@ -26,8 +26,9 @@ class CSchool: NSObject {
     let kind: String
     let estdate: String
     let holiday: String
+    let educode: String
     
-    init(edu: String, code: String, title: String, engTitle: String, level: String, locationName: String, pbpr: String, addr: String, tel: String, site: String, jender: String, fax: String, kind: String, estdate: String, holiday: String) {
+    init(edu: String, code: String, title: String, engTitle: String, level: String, locationName: String, pbpr: String, addr: String, tel: String, site: String, jender: String, fax: String, kind: String, estdate: String, holiday: String, educode: String) {
         self.title = title
         self.locationName = locationName
         self.edu = edu
@@ -43,6 +44,7 @@ class CSchool: NSObject {
         self.kind = kind
         self.estdate = estdate
         self.holiday = holiday
+        self.educode = educode
         super.init()
     }
     

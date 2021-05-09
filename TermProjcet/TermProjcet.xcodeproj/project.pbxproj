@@ -11,6 +11,10 @@
 		A118A0C72646FA0F00778DCD /* SchoolInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */; };
 		A118A0CA264711A700778DCD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C9264711A600778DCD /* School.swift */; };
 		A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0CC2647146400778DCD /* SchoolMapData.swift */; };
+		A13686D92647C682009DC3C2 /* logobg.gif in Resources */ = {isa = PBXBuildFile; fileRef = A13686D82647C682009DC3C2 /* logobg.gif */; };
+		A13686DC2647C7E2009DC3C2 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13686DB2647C7E2009DC3C2 /* LogoViewController.swift */; };
+		A13686DF2647D203009DC3C2 /* meal.png in Resources */ = {isa = PBXBuildFile; fileRef = A13686DE2647D203009DC3C2 /* meal.png */; };
+		A13686E22647FECB009DC3C2 /* SchoolWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13686E12647FECB009DC3C2 /* SchoolWebViewController.swift */; };
 		A1E3A5E92643062D00A0F454 /* hello.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A5E82643062D00A0F454 /* hello.gif */; };
 		A1EC5C5426429212002B2639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C5326429212002B2639 /* AppDelegate.swift */; };
 		A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC5C5526429212002B2639 /* SceneDelegate.swift */; };
@@ -28,6 +32,10 @@
 		A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewController.swift; sourceTree = "<group>"; };
 		A118A0C9264711A600778DCD /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		A118A0CC2647146400778DCD /* SchoolMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMapData.swift; sourceTree = "<group>"; };
+		A13686D82647C682009DC3C2 /* logobg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logobg.gif; sourceTree = "<group>"; };
+		A13686DB2647C7E2009DC3C2 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
+		A13686DE2647D203009DC3C2 /* meal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal.png; sourceTree = "<group>"; };
+		A13686E12647FECB009DC3C2 /* SchoolWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolWebViewController.swift; sourceTree = "<group>"; };
 		A1E3A5E82643062D00A0F454 /* hello.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello.gif; sourceTree = "<group>"; };
 		A1EC5C5026429212002B2639 /* TermProjcet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermProjcet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EC5C5326429212002B2639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +100,9 @@
 		A1EC5C5226429212002B2639 /* TermProjcet */ = {
 			isa = PBXGroup;
 			children = (
+				A13686D82647C682009DC3C2 /* logobg.gif */,
 				A1E3A5E82643062D00A0F454 /* hello.gif */,
+				A13686DE2647D203009DC3C2 /* meal.png */,
 				A1EC5C5326429212002B2639 /* AppDelegate.swift */,
 				A1EC5C5526429212002B2639 /* SceneDelegate.swift */,
 				A1EC5C5726429212002B2639 /* ViewController.swift */,
@@ -105,6 +115,8 @@
 				A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */,
 				A118A0C9264711A600778DCD /* School.swift */,
 				A118A0CC2647146400778DCD /* SchoolMapData.swift */,
+				A13686DB2647C7E2009DC3C2 /* LogoViewController.swift */,
+				A13686E12647FECB009DC3C2 /* SchoolWebViewController.swift */,
 			);
 			path = TermProjcet;
 			sourceTree = "<group>";
@@ -170,6 +182,8 @@
 			files = (
 				A1EC5C6026429213002B2639 /* LaunchScreen.storyboard in Resources */,
 				A1E3A5E92643062D00A0F454 /* hello.gif in Resources */,
+				A13686DF2647D203009DC3C2 /* meal.png in Resources */,
+				A13686D92647C682009DC3C2 /* logobg.gif in Resources */,
 				A1EC5C5D26429213002B2639 /* Assets.xcassets in Resources */,
 				A1EC5C5B26429212002B2639 /* Main.storyboard in Resources */,
 			);
@@ -229,6 +243,8 @@
 				A1F417D22644472C00B5F571 /* SchoolSearchViewController.swift in Sources */,
 				A118A0C72646FA0F00778DCD /* SchoolInfoViewController.swift in Sources */,
 				A1EC5C5426429212002B2639 /* AppDelegate.swift in Sources */,
+				A13686E22647FECB009DC3C2 /* SchoolWebViewController.swift in Sources */,
+				A13686DC2647C7E2009DC3C2 /* LogoViewController.swift in Sources */,
 				A1EC5C712642AB2F002B2639 /* InfoViewController.swift in Sources */,
 				A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */,
 				A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */,

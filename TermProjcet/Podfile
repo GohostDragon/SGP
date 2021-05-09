@@ -10,5 +10,6 @@ target 'TermProjcet' do
   pod 'FSCalendar'
   pod 'DropDown'
   pod 'Gifu'
+  pod 'MaterialComponents/BottomSheet' 
 
 end

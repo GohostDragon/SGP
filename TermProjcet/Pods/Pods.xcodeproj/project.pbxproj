@@ -7,194 +7,370 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0133233B8FA3F7CD520BF2320BBB48D1 /* FrameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ACCDBA576B35257A6BBF218F098181 /* FrameStore.swift */; };
-		0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = FE9ED0099BB20DCA532ADE300174F39B /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D7D361D1397EB24E780403486C2B96 /* FSCalendarDelegationFactory.m */; };
-		0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 97FFDF11E84769BD2FEDDCF5A6F9F7D6 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BABEB0811AD3FB96B0EA89F4320CC6A /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5837D328692D3F6A3804C54B2C2B58 /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C89AA978617021F6FE9429298227DAD /* FSCalendarSeparatorDecorationView.m */; };
-		1A519332A6F30268B5FC593FBD0BA876 /* Pods-TermProjcet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8390E8EA500B70E205460E10B3BD367E /* Pods-TermProjcet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEEEA11461711EEACD8C2E28A69F76 /* FSCalendarExtensions.m */; };
-		1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8DFB36C7F6C11E235DDFD9D7EB4298 /* FSCalendarStickyHeader.m */; };
-		1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CFB806A526C6A17616A6CA2B62B9C07 /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1EDE2977A2B65B33C5EDADD7722A /* FSCalendar-dummy.m */; };
-		2C94A3135168EFCB30223DAC7080F1A8 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552ECBF171679BEBB06F9BB9ECCE87A0 /* UIImage.swift */; };
-		2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FB4CE430EA006DD26D2868F41EAB5F02 /* FSCalendarConstants.m */; };
-		361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA32D8A1158A05D50BE0EA74534C38 /* DropDownCell.swift */; };
-		3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C39DE99A2B301229521EB433C43B96D /* FSCalendarWeekdayView.m */; };
-		412892682BE8AA0CE911F1C04590BEF5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C99F811C4D4CA60C6C07FEFC6E587 /* Array.swift */; };
-		45984E7480A4DB592B40F0DA0DAE7514 /* Gifu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E40F25CBAB9BE11D1B05F127B87BD07 /* Gifu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E456070E661D2863150D8BC49A81DFC /* FSCalendarCollectionViewLayout.m */; };
-		48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5E8E92F760B92C676D2E2D4AA19836 /* FSCalendarDelegationProxy.m */; };
-		4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B07624A7C566656AE862815FBC78 /* DPDUIView+Extension.swift */; };
-		4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B558C8BBB518FD926C6F5E0AC1E552 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = E008B07B310D1D83FDAC755ECFF30286 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0A7ABD96676EF51DA67F9703D72DEB /* FSCalendarCell.m */; };
-		4F8F54512992CAE265C593B52F34532D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0F27519A1C3BF98256732AB5F31B9E /* UIImageView.swift */; };
-		52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D5AA3A6E682D908B252723A352315C /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		579C1FBFB7E8AB0557C8FD0D89A9AD05 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57712F08241AA2D767A56B174A0F3BB /* Animator.swift */; };
-		58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 245D84FFBBA37A75F64A34C6430AA751 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9EDBD99EC196CA33DD064A1243C9C8 /* DPDConstants.swift */; };
-		6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F6F24B62EF3A5DD31D7B489EB48F71 /* DropDown+Appearance.swift */; };
-		6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B35DA51C6E746495A533DA23411B65B6 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A54971B22A9DA884B2D15C79E65CB6D /* Pods-TermProjcet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7085DB41595EB2F4F77EC18A780BF6ED /* Pods-TermProjcet-dummy.m */; };
-		7AD3D64ECA31F3BB35F029102F047E88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
-		7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E4D1523971207F73044881ED31655 /* FSCalendar.m */; };
-		842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA57ADEBDEEE74A7EDD2369F6539F249 /* DropDown.swift */; };
-		8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF708652C6C17741E82266F958CAD9 /* FSCalendarAppearance.m */; };
-		8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F18652F36094E2EC49EAC4D03B2A61 /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CFBC39EA76AD5B25198E54A5A9197BEA /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = AD45136B853B4EEBD45A2BB65EFF3354 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93547DAC83B7FCC4FB7DA7851E8A8EAB /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5E7856F25C1DC29D0BF69A70E994D /* CGSize.swift */; };
-		93D3B2EC7BAD20C4F2269A79F8FF972B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */; };
-		9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CCF76D45DBCA770B983E0D93C8A4F85 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 279AFA0BAEC3DEC2C8208FB3DB27A18A /* DropDown-dummy.m */; };
-		A09C6F8458CE2EF255D89235825F441D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
-		A6A76623CE01F0CBAB470BDA582AEDB3 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D785DCA3EA00E9EA0073B8C675AB8 /* GIFImageView.swift */; };
-		B1EEB201E44E9E562D052F9181538E23 /* Gifu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C57B613BF9031EECBB85B263960AB0E /* Gifu-dummy.m */; };
-		B36CF03A512E05741F8B8F58834B08BB /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DE5A231BCD76A9641FEE01998878 /* AnimatedFrame.swift */; };
-		BA4618552515686F83F7873D094EB189 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */; };
-		BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9A89A02BD3952EEAFF63C64CBE15F /* DPDKeyboardListener.swift */; };
-		BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB513992275B9FB8CF30AF39DC9391F /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EB351B3D83480C7402BA4B249880BF1 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DBE71B5A362303AFFF4153303F60B8C /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
-		D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C17645E5DFA938B3D1DF1BF5567F28 /* FSCalendarTransitionCoordinator.m */; };
-		D6D1B805F4ED0B8805CEB5DCE192FEA9 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BB10EFA7D353BE35A31A77F65E4F86 /* ImageSourceHelpers.swift */; };
-		DBC9BB953E1263398D517CF24DA43FA0 /* GIFAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D2ACE32C9BBFB77DBEF1EF6E8B1A69 /* GIFAnimatable.swift */; };
-		DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA7B1689FEAB4502BBA238A89334FE6 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C49511BC0A20CD16D8142C52284047B8 /* FSCalendarCollectionView.m */; };
-		E8583EF4F023B694EA051DD60BF2BAFA /* Gifu.h in Headers */ = {isa = PBXBuildFile; fileRef = CDB4ACF3C35343DAEDE9C154BC899F56 /* Gifu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD3B9088DB1300EE313CB1D812AF770 /* DropDownCell.xib */; };
-		F390EE3F6501EA735B348A94C0416E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */; };
-		FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = A323E37A4A786DD41F433DD6B17E4935 /* FSCalendarCalculator.m */; };
-		FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25306F17E23C0DC7AD2575A7D5EE8A54 /* FSCalendarHeaderView.m */; };
+		0133233B8FA3F7CD520BF2320BBB48D1 /* FrameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3983F6E75ED014414F9F235B1D2FBC8 /* FrameStore.swift */; };
+		015511D4ACD183CB78F8F0F79FCF3F01 /* MDCBottomSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D2248CA7FDF22895AD0E0FEE5C0496 /* MDCBottomSheetController.m */; };
+		045B17ADCA714417CCF0DCC9D9096D24 /* MDCDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7F6BCD242D50B31A42C0BC7EC4C4E8 /* MDCDraggableView.m */; };
+		066439D717AE4BC003363486E27C707A /* MDCTriangleEdgeTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = B116350BEC5FDC9200D0E3682A89CC4A /* MDCTriangleEdgeTreatment.m */; };
+		0673F3481EF6165F70E8F0990278BDC7 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 18ABED6C5F9459FF0268DEB391DF4C13 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0768B68EC675EBCCABB024A9FB318444 /* MaterialColor.h in Headers */ = {isa = PBXBuildFile; fileRef = E43BC422354FA9899D18BC869B9237A1 /* MaterialColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083B18F49C35728E9A7B828E73DF2EB8 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EF3F85C94D55AD1FC0E3E1D528CC39 /* FSCalendarDelegationFactory.m */; };
+		0C880D762097C192F231E5560AF4EE29 /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = FE77F62CA45E41F2107B98EFDDB24D89 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E4A225B2E9192B1B7C8DFB85B4303AF /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2EEBDECFA85644AA372903F364F1A9 /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EDCAFA93DA0E7D98A2CF2386FEAA550 /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = C78C322FAA2C3A9437173FB9BFA82000 /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F2DEB38F550FF5F643CD48BE324B009 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B32E97383888BB9D9D3E0CE47B890A4 /* FSCalendarSeparatorDecorationView.m */; };
+		19F431D12744F02779B1FCA82579DDD6 /* MDCShapeGenerating.h in Headers */ = {isa = PBXBuildFile; fileRef = 946B7FEBA2735ADF4245A401AEF5D6C7 /* MDCShapeGenerating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A304FAEF5CF0C1E8622E908555FE490 /* MDCCurvedCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = C40FA30E323B39C4CA41530EBA0E2131 /* MDCCurvedCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A6CEDB0E42E0DEA22512AE2D91707C8 /* MDCSlantedRectShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBBC625A9B8156D2D7A35F56DA49D4B /* MDCSlantedRectShapeGenerator.m */; };
+		1B304B7C5104F9421117AFEB21453F67 /* UIColor+MaterialDynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = FCCCAB52D21902200ABCAA273A883E68 /* UIColor+MaterialDynamic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BDE0FED974714A835CB89AD1062FF0D /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F0E5D03D89DCB1C734666EC7D303EB /* FSCalendarExtensions.m */; };
+		1E0C257A13260508F9FC03D637764614 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 190B45AFBE547C0182584EDF2CD9685C /* FSCalendarStickyHeader.m */; };
+		1ED6A018A50C929244C03FC6A46670F8 /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E8162AECFC3092967B5AF367D5E261BC /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2126BAE2A3A69461E8B00562CFF6D67C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B94278A54150AD5FECDA50D7289BC2A /* FSCalendar-dummy.m */; };
+		23AD7797186955B046EA44B8636C1AC3 /* MaterialBottomSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 07CD1F63070E4DC59ED216DE32FB41E4 /* MaterialBottomSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A90CB838F94F6308EA293F3047C42E /* MDCAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2BC04EE2A298B948A435A9D2410705 /* MDCAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A00198B4641725EC612125584590BA5 /* MDCSheetBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA0B5DBBE2689571134F8D1F7113685 /* MDCSheetBehavior.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2B08C5A22A776EDEB74DB4B835A19B1D /* MaterialElevation.h in Headers */ = {isa = PBXBuildFile; fileRef = C8AB3136045D06C92FCFBE1642E5B90A /* MaterialElevation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C0CEBFD92AF5FE06B0F5D47D68FB86B /* MDCBottomSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE7F99958D09532D8B704A066A8976A /* MDCBottomSheetController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C94A3135168EFCB30223DAC7080F1A8 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88684069CFAA0B0ECB7B4FB5198437 /* UIImage.swift */; };
+		2E2BD5BB87E4AC41401353835E7F7914 /* MDCSheetBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 3970E6F23A5259EC488C7832086D5E55 /* MDCSheetBehavior.m */; };
+		2E5EC07CFD18A132E57569D00117C703 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B393BBDEF7F802995864370B2DCCC960 /* FSCalendarConstants.m */; };
+		34D352F0915CF9F8500B1D5A94AF36C6 /* UIApplication+MDCAppExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E5435EC92945009542D767D67744C1 /* UIApplication+MDCAppExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		357A8A169BB53A5F85A3B2EA04A54F0F /* MDCCurvedRectShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0BF9EDE963D9B202B4CBCEE34D9A71 /* MDCCurvedRectShapeGenerator.m */; };
+		361F5CE2807CBD530C8C6E63FD245F5A /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DD146BBB32E368B0AF6A3339B7004 /* DropDownCell.swift */; };
+		3873F4D2DBAA04C02ADADDDE71898F31 /* MDCSheetState.h in Headers */ = {isa = PBXBuildFile; fileRef = E900DE720B947AAF34B3DB04ECA62081 /* MDCSheetState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F035D81FAF81A41E9E58238265A0051 /* MDCRoundedCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 646A16B80E57E81A0674FEBFBF64F281 /* MDCRoundedCornerTreatment.m */; };
+		3F0F6CEFD0801BEA64D1A265AE92FC05 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EE7BD3A5CE9B6BAE51BC3B047DB7BC /* FSCalendarWeekdayView.m */; };
+		3FF765F75F1270082F2EE95FDA9EF8BA /* MDCRectangleShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 921D32A0BE86B1D6FB33F512F8D486FE /* MDCRectangleShapeGenerator.m */; };
+		412892682BE8AA0CE911F1C04590BEF5 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = D315E98BCAFFE0DED547D071FA0F6BA5 /* Array.swift */; };
+		41EC1065752BAACEE3C4EDC8CABB900B /* MaterialKeyboardWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C967AF816119E0C238BB394C7D7A852 /* MaterialKeyboardWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45984E7480A4DB592B40F0DA0DAE7514 /* Gifu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3209F578CE424F95D083B2BADD602CA /* Gifu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46495406605D108F4CD12BDE5A4B6AF2 /* MDCSheetContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E0516CF08A0E1FA39D708E934BAAE9 /* MDCSheetContainerView.m */; };
+		487467099AB8229395A1A005DC6AD4F4 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA96739D90F7B1428E4B5F721956E6 /* FSCalendarCollectionViewLayout.m */; };
+		48DC50A48CEC3AEC56CB6C3144EF4D47 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 710FAB2565600D7E4F4B0D1E9C8FAED7 /* FSCalendarDelegationProxy.m */; };
+		4958DBF1C53FFBB5924C6F3C91B9F7A9 /* MDCShapedShadowLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C71C845401A909C1AE16F832F62AF3 /* MDCShapedShadowLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A76ABED65F7F6BAC8338E6A602C1AB3 /* UIView+MaterialElevationResponding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5FD884C7FF4425DC596E2C35543552 /* UIView+MaterialElevationResponding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A8FE4C4F6D45B41CE01A00D24C56961 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B09831134063D4E6A31FF30A3EA850 /* DPDUIView+Extension.swift */; };
+		4B06E7A9994CCDB40333001E83F1FD79 /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 74EAE6317B56CAEC21E7A3DF8392BABD /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B11C48CCA7FD866A774B0E49FB595DA /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = AA479E462C106F212B6A27A258A0DC45 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C79C31591A80E7209E52F0928F7546C /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA10DE439E07C65E26684870E976784 /* FSCalendarCell.m */; };
+		4EC8090B180710C479A3B21CD72FB213 /* MDCBottomSheetPresentationControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07178D96C86D71270875CB740EBFEFFA /* MDCBottomSheetPresentationControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F8F54512992CAE265C593B52F34532D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93D44BCB9D1CD1C5898F4851E9985E /* UIImageView.swift */; };
+		51EBF4ED4DA88FCB58F2CAC291D1079A /* MDCRoundedCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFEA24CF91D4EFF6D75CC3EA802AC76 /* MDCRoundedCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52565719316CADB05B7C8FA79964519A /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = ED480E11A10067F01138200DD2E8A201 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		528D55FC297AD93F1463CAC1B0CCD1CD /* MDCShadowLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD67BEF1ED858D3ABF30BF3C3BD6867 /* MDCShadowLayer.m */; };
+		579C1FBFB7E8AB0557C8FD0D89A9AD05 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA044F02CBD03561CF887E91D2600C37 /* Animator.swift */; };
+		58AD6758D9237AFCBAE75CF5AA275C47 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = E43271CB4B1893B78B09B09DBC392908 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		592002A7F1B30C9E5A6A2D3624E6642D /* MaterialShapes.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4FAA0743AF6922ADA89E4C558E82F5 /* MaterialShapes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F515237FF94DAB4C8A15B7E33A3877B /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1A066742306B14A72DFC2A593D53E4 /* DPDConstants.swift */; };
+		6064C623428CE711C252E442741F81AB /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9431D066B63C7DB79FD23885B46DE49 /* DropDown+Appearance.swift */; };
+		62A95262A25CE34C27B3FD2B1969277C /* MDCElevatable.h in Headers */ = {isa = PBXBuildFile; fileRef = 446B44AE917F1CAB836DB91E6C11F106 /* MDCElevatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		647C3DF4DD99EF544435173281FF6E92 /* UIColor+MaterialBlending.h in Headers */ = {isa = PBXBuildFile; fileRef = 678E52C5763C0812CEA0883EB25CACA6 /* UIColor+MaterialBlending.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68D1C976F2E0B7ACB1000C5FB3ADA5E1 /* UIColor+MaterialBlending.m in Sources */ = {isa = PBXBuildFile; fileRef = 463D6CC791962C34665B0727DC9118A0 /* UIColor+MaterialBlending.m */; };
+		6BC96BCB3EF130F53BB9A78D7E2EFB9E /* UIViewController+MaterialBottomSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 03812A7530098D0202E9589BFBE6A38B /* UIViewController+MaterialBottomSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CF04FDA8240D858280268329C2674E9 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A10A8DD66B1BE3BEE305D3B74BFFA100 /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F3E35952D17589EA939B24A4798FDF0 /* UIColor+MaterialDynamic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E952B7E0BB74CB414574E8820C14772 /* UIColor+MaterialDynamic.m */; };
+		79709A0F4E6BFCEF9D0E853CD6807959 /* MDCKeyboardWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 24361FF9BB916CADF119FED3DF5CFACF /* MDCKeyboardWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BD813EB53FFD5E61D3E8D17FDEF5762 /* MaterialApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = E04A730840249897B9D7E8E44E88A21A /* MaterialApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D3E486DB6C65975B839986EBFD38318 /* MDCPillShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4390D91FC241C70F0D76FDADC901F7 /* MDCPillShapeGenerator.m */; };
+		7EAEA451E04E5E96AFE6D1B63313F624 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B974F6963FE8003A449C742C005343E /* FSCalendar.m */; };
+		7F98776A7962572395F923703553ABAA /* MDCKeyboardWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A4752DA6480240753BE99486AEA41BCA /* MDCKeyboardWatcher.m */; };
+		81F6B3871E03BF241CB40023C4442227 /* MDCElevationOverriding.h in Headers */ = {isa = PBXBuildFile; fileRef = D1087154BC5A638BAE26A80BA1D0A9FE /* MDCElevationOverriding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8226EF38F2234303BB738273DD72DF7A /* MDCRectangleShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F71A8C6C08AFF6B8D46D88F7E126F3 /* MDCRectangleShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83BA64B1B6C5CB7E0F0FDF3FB8AD734F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC3518725ED0791502E99F93252E2EE /* Foundation.framework */; };
+		83E77B4563193B5EF5BCD5BA674DC997 /* MDCSheetContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E2CF09B5BCB9CCE0F59BEB64F02776 /* MDCSheetContainerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		842DFBB1471889C2CA329AE05620BBE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A304724B071A16A4F2289AEDABF75D6A /* DropDown.swift */; };
+		84B037D3215B9BD0863CAE3BB692CAE2 /* MDCShapedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A1717CA141A1188BEE98B57C7C6A0386 /* MDCShapedView.m */; };
+		8607B06ECC453ABECA0C6F9E92395376 /* MaterialShadowElevations.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4C4BC686C5BF602C13713EC2BF9557 /* MaterialShadowElevations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8633C154CEC62F5ECAE687CC7ED8067E /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC1B36A3184449B25FA6D90DD0233C /* FSCalendarAppearance.m */; };
+		87E4A53B714A12498CE600B77686C8A8 /* MDCBottomSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD09DF6E4E304989B94E8F5FA7079B8 /* MDCBottomSheetPresentationController.m */; };
+		888032AC899C87D4E12B1993502699F2 /* MDCCutCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 765A58148DD285BED8BE9AE3B0477646 /* MDCCutCornerTreatment.m */; };
+		889FD7B6C2C8CD0E91C35B43074B0752 /* MaterialComponents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AD143DC144E3F5CB519B12D27C9D80 /* MaterialComponents-dummy.m */; };
+		8AB76EF4157ADE0806FA3B4A1549EAD2 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 123B0CB3C97BCBBCFC1502A1E69C67D2 /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DC48F8F5F7B03BDF176AFD6A6C286CD /* MDCEdgeTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9A2151F6C7994E7ACC2B3DE1783FAC /* MDCEdgeTreatment.m */; };
+		919B72E0CE7743838A947288D10AAEA3 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E0631A071A524E7DE540011ED460E6E5 /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91A96B98AD78AAD881AB6389B1368405 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 91F89C6C5BBB8EE28CB02718F90A48DF /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93547DAC83B7FCC4FB7DA7851E8A8EAB /* CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C418B397F54B7457C187DE2E09E87 /* CGSize.swift */; };
+		9359F19224DA2E55485BDC2CA57919BA /* MDCDraggableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0364C00D0090E3E0346E19D4B5F2CC7F /* MDCDraggableViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93D3B2EC7BAD20C4F2269A79F8FF972B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6054C3F749D7A5852580E7C66A51F32 /* UIKit.framework */; };
+		9406299AFB3E995D047529C304D4A195 /* MaterialShadowLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F774E57F2E6ECB6FF2002DD20F9BE9D /* MaterialShadowLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9518195DB69E904D77247E0A55A0043C /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B6AAB66683D04E1677CD0236F9A4A0 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95897DCFD4071A7D61AEAE1DA86BB539 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC39A1F0913B65BEFB9AC6AA46AC8AE /* DropDown-dummy.m */; };
+		958CEC0A17E65944F5C8A5500DE7FD00 /* MaterialComponents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EE503946433570EFC7462B9EBF3057C /* MaterialComponents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95D5BD0113DFC666346BDC9EE60E8D8D /* MDCShadowLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A373B57267400FB5BF76074D86C6D97 /* MDCShadowLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E15058FFF8DDEFDE915CFCB913A34B /* MDCShapedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D152010DE396C89200F6CD9BAB1D9F4D /* MDCShapedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DC842FFE7C8DCB96E49F06BF7975DAE /* MDCShapeMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D6696F190CB908C5CB6536C69A3F33 /* MDCShapeMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EBA3162E0BFA77C454865EF907619DA /* MDCTriangleEdgeTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = 8770A07D66BF1BFC1CFA98E8496B7967 /* MDCTriangleEdgeTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A09C6F8458CE2EF255D89235825F441D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC3518725ED0791502E99F93252E2EE /* Foundation.framework */; };
+		A1C152BD9F0F1606B6D90EAC1DF82700 /* MDCBottomSheetTransitionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A8F50DC619327DCB714C84AF4C4796 /* MDCBottomSheetTransitionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A27481E0C1947D76287FBB49CE42B06B /* MDCCornerTreatment+CornerTypeInitalizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CE199397E67420738C60F82B861CB9A /* MDCCornerTreatment+CornerTypeInitalizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A57ACA7BC0C44660A1D979AC4D42EC92 /* Pods-TermProjcet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8390E8EA500B70E205460E10B3BD367E /* Pods-TermProjcet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5951056C78026270D265B1A05FB77A0 /* MDCBottomSheetControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C9D39FBCFE8C24621735E6FA7A9146 /* MDCBottomSheetControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A67FEE8FD423E6C4A8EDA4F5DF3A9A80 /* MaterialMathDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8E89E89E6394FD344B69235265BF5E /* MaterialMathDummy.m */; };
+		A6A76623CE01F0CBAB470BDA582AEDB3 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918F38D24383999FC15A6CE7C55BF45 /* GIFImageView.swift */; };
+		A8A9071E31DCB75622DA04C3ED40B98F /* MDCCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = 7098B257C1ACDCEB3C34F9DC35D9C961 /* MDCCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F0EC87E16102BC801E1429E3A259AA /* UIViewController+MaterialBottomSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B6A9885C26B25982D8CEE54A33B75 /* UIViewController+MaterialBottomSheet.m */; };
+		AB80344757F1BF9A274B8CEE167E3F30 /* MDCBottomSheetPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 696C464AEA349FF48BB8E3FA681E4742 /* MDCBottomSheetPresentationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABEFEA99DE7320CC9D1D36002D45D83E /* MaterialMath.h in Headers */ = {isa = PBXBuildFile; fileRef = C3FC05B8230430F89E05E0FBB98608B5 /* MaterialMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD6206FA289B4651BB747798FD46B7B8 /* MDCPillShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FC8D5751397F89A1344552AEB7363F0E /* MDCPillShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1EEB201E44E9E562D052F9181538E23 /* Gifu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 699485E9601FA5C65431F7BEF5C2F5F0 /* Gifu-dummy.m */; };
+		B276753B1C2BEC3D0C04F3EAFAFB2319 /* Pods-TermProjcet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7085DB41595EB2F4F77EC18A780BF6ED /* Pods-TermProjcet-dummy.m */; };
+		B36CF03A512E05741F8B8F58834B08BB /* AnimatedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC72E828EF167EF56AAB172869704BC /* AnimatedFrame.swift */; };
+		B382ED925D539434103D3DA8B1BEA917 /* MDCPathGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E19ECE25EE42F16ACD1361622FD9469 /* MDCPathGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4F4CB89BD4FF9D22964FB5EFDD65C0F /* MDCCutCornerTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB8F163BA7A532EBE5B3493CEBEB62F /* MDCCutCornerTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5865268D0C8941A7FD48A91ECE400D6 /* MDCSlantedRectShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C75398064ED7258B5652E455F34D0C /* MDCSlantedRectShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B63C7F92C82593FA45FE0B2D94E188B4 /* MaterialShadowElevationsDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD92338DFDE5B208F94F0BD32C112E5 /* MaterialShadowElevationsDummy.m */; };
+		BA4618552515686F83F7873D094EB189 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1EAD62DA5D58CA4EF748D66011CD37 /* QuartzCore.framework */; };
+		BA7BB2FF04CE1CAFC5238D1807EF0034 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DEC52B216129892C1774560A17E0F /* DPDKeyboardListener.swift */; };
+		BAA19917A9D659B3AE6AC41D3D4870EE /* MaterialAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F78A43032249B1FA7D60F4D5D62BF6C /* MaterialAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB06A62079EBC50FC3883D96ABFE581 /* UIColor+MaterialElevation.h in Headers */ = {isa = PBXBuildFile; fileRef = C40DBE382728E876D1339AD381952030 /* UIColor+MaterialElevation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BADEDF3F5C6B8ECA687B3061C65C7E5D /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = C7FDCC5D3E16A36CBD56A0869C55091F /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBF5E9A50B05DA9EA5A46F3838FA31AD /* MDCDraggableView.h in Headers */ = {isa = PBXBuildFile; fileRef = E85D754A1AFF7C9519A7B0B973C0EB33 /* MDCDraggableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3C830DA8E913ECBCF786ECB939918B2 /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5498590CC58F9D8E0C3B239DEA067E64 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C476BDEFC2C6E6CC23C0613BC70FC1B3 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 799FF44616269DE48BFAD22BC74EF681 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8B94A2D7B8639EAE6A57753CB5DB17B /* MDCSheetContainerViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C96B8826FE26724F50DCF846D1B413EC /* MDCSheetContainerViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C99487C04757ECF4F73FA1D4519CFD6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC3518725ED0791502E99F93252E2EE /* Foundation.framework */; };
+		CA73DDDB149041B138811BE98924C594 /* UIApplication+MDCAppExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2292E25A85063EB33237B89C9F7A3857 /* UIApplication+MDCAppExtensions.m */; };
+		D192D52340F6B27DA840BE2FA9F49EE9 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB94F9AEB031CEF4DF0F5137EAD42107 /* FSCalendarTransitionCoordinator.m */; };
+		D2DA847A5AFB71B24633A81F490B05EC /* UIColor+MaterialElevation.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E1AE3190BF4B83D70AD15B62BCF494 /* UIColor+MaterialElevation.m */; };
+		D46AD0CE508E5D8A5FC7F184DBBB1EAE /* MDCPathGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B143690B13931BA30C196DC75E344B63 /* MDCPathGenerator.m */; };
+		D6D1B805F4ED0B8805CEB5DCE192FEA9 /* ImageSourceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71564A7C32F9A0D72A335871A824030 /* ImageSourceHelpers.swift */; };
+		D7DFC8407A67FE6F417824532A1351DA /* MaterialShapeLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CD3A49F4725C35631128C404A5157D /* MaterialShapeLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBC9BB953E1263398D517CF24DA43FA0 /* GIFAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751688D1E6C0EA116811721AA181FC86 /* GIFAnimatable.swift */; };
+		DEA8746B8ACC9D6CE9EBDEA8F8CB2E27 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = CA15E120246657020C4995D06F7FC04F /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF469589BC3403B2A47C6AD8B2BBE3DA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9CD176E991CC22FCE7D7D63BEF4540 /* WebKit.framework */; };
+		E01AA52F65548DA36FF6145ADF2CC930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC3518725ED0791502E99F93252E2EE /* Foundation.framework */; };
+		E06FD07F020F4CD17109D4EFA1EDD6CE /* MDCCurvedCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D9318BE20253D3B5916DFCC49B838E /* MDCCurvedCornerTreatment.m */; };
+		E56AE3ED48D8E87D1CD9718291E0B5E5 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AA59CAB3C83767938460EDE4972C88 /* FSCalendarCollectionView.m */; };
+		E593E1AFC525348B0FA77DFE813F2350 /* MDCCornerTreatment+CornerTypeInitalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CF516E820FC91F8470E5C672F5CACB /* MDCCornerTreatment+CornerTypeInitalizer.m */; };
+		E8583EF4F023B694EA051DD60BF2BAFA /* Gifu.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BE7087EF53B41A656853BED1651FE1 /* Gifu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9D24B4691FEF6E79A0F60C321DEF39D /* MDCEdgeTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = AD48F19793D6A335560302414A2864B5 /* MDCEdgeTreatment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F2045A3A327540D9B4A5ADA250C3C86 /* DropDownCell.xib */; };
+		EBF5AB7255E72DB80DF0BA04CED4C295 /* MDCShapedShadowLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2FE3D20CEAACD9C6AE6F53F83563D5 /* MDCShapedShadowLayer.m */; };
+		ED5B7134348145D025C2B7AEC4A896ED /* UIView+MaterialElevationResponding.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDE318B1835F087A472DE0080550102 /* UIView+MaterialElevationResponding.m */; };
+		F390EE3F6501EA735B348A94C0416E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC3518725ED0791502E99F93252E2EE /* Foundation.framework */; };
+		F5C699B3399E7BF36A74BB4C56A46FD4 /* MDCBottomSheetTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABF866C2CC8DAA0CB8D90AEECA0613C /* MDCBottomSheetTransitionController.m */; };
+		F5D92BD96561735261424D962B1582BF /* MDCShapeMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = F940385DFACA64E40574221D7D731413 /* MDCShapeMediator.m */; };
+		FB71B976745977B39DA0BC1B4766782A /* MDCCurvedRectShapeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D4FD338DF86107EAFEF68B0287D2281 /* MDCCurvedRectShapeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC57BC309245609B0F44DFB1968D979D /* MDCMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF9D42BDABBAD76199565DF1CF83B18 /* MDCMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCBF6565CA4D10B61B1EBEAA81B4EE6B /* MDCShadowElevations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5B3FD617DADACD551ADDDA88D397D2 /* MDCShadowElevations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDB26845AA353936661B049BA64ABD25 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E33700A8763143797EA5B475E024AD0F /* FSCalendarCalculator.m */; };
+		FE8C606CC7BB9361045058A446FCAA0A /* MDCCornerTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = 16882C375ADD1184EDE12ED315BB908D /* MDCCornerTreatment.m */; };
+		FFF8E80B6D3629DB84D475C728EFCA1D /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 872E996BB0547503D5FD61A1B79C5BC8 /* FSCalendarHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A72AD3CD1E450178146C2D5ED8946317 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
-			remoteInfo = DropDown;
-		};
-		C4C78F414006C1E8EFB47AAFFF9F590C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13285D54682BEAD805960F9E6EEB9949;
-			remoteInfo = FSCalendar;
-		};
-		E27B0BC0E1D544A263E6303318461135 /* PBXContainerItemProxy */ = {
+		38D46FA88B03B5CCF8F3C3D639AD4804 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 830B5AB9E16163B4A1BA339D625FE46C;
 			remoteInfo = Gifu;
 		};
+		4D127E20521A7E6429D0D4991240E100 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13285D54682BEAD805960F9E6EEB9949;
+			remoteInfo = FSCalendar;
+		};
+		6E6148094E48D222C2EE62A90CDA7F3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4723B5744013DF08BE3A5FEAA286944;
+			remoteInfo = MaterialComponents;
+		};
+		B2F97F79A4B9BF80B371ACF8B033F5B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
+			remoteInfo = DropDown;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0278E9EABD7F23063C13580ABB21D9A7 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
-		08D2ACE32C9BBFB77DBEF1EF6E8B1A69 /* GIFAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFAnimatable.swift; path = Sources/Gifu/Classes/GIFAnimatable.swift; sourceTree = "<group>"; };
-		0AC6B07624A7C566656AE862815FBC78 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
-		0C57B613BF9031EECBB85B263960AB0E /* Gifu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gifu-dummy.m"; sourceTree = "<group>"; };
-		0EBF1EDE2977A2B65B33C5EDADD7722A /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
-		12D5AA3A6E682D908B252723A352315C /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		0364C00D0090E3E0346E19D4B5F2CC7F /* MDCDraggableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCDraggableViewDelegate.h; path = components/BottomSheet/src/private/MDCDraggableViewDelegate.h; sourceTree = "<group>"; };
+		03812A7530098D0202E9589BFBE6A38B /* UIViewController+MaterialBottomSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MaterialBottomSheet.h"; path = "components/BottomSheet/src/UIViewController+MaterialBottomSheet.h"; sourceTree = "<group>"; };
+		04C9D39FBCFE8C24621735E6FA7A9146 /* MDCBottomSheetControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetControllerDelegate.h; path = components/BottomSheet/src/MDCBottomSheetControllerDelegate.h; sourceTree = "<group>"; };
+		04E2CF09B5BCB9CCE0F59BEB64F02776 /* MDCSheetContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetContainerView.h; path = components/BottomSheet/src/private/MDCSheetContainerView.h; sourceTree = "<group>"; };
+		06CD3A49F4725C35631128C404A5157D /* MaterialShapeLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShapeLibrary.h; path = components/ShapeLibrary/src/MaterialShapeLibrary.h; sourceTree = "<group>"; };
+		07178D96C86D71270875CB740EBFEFFA /* MDCBottomSheetPresentationControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetPresentationControllerDelegate.h; path = components/BottomSheet/src/MDCBottomSheetPresentationControllerDelegate.h; sourceTree = "<group>"; };
+		07CD1F63070E4DC59ED216DE32FB41E4 /* MaterialBottomSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialBottomSheet.h; path = components/BottomSheet/src/MaterialBottomSheet.h; sourceTree = "<group>"; };
+		08BE7087EF53B41A656853BED1651FE1 /* Gifu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Gifu.h; path = Sources/Gifu.h; sourceTree = "<group>"; };
+		08C75398064ED7258B5652E455F34D0C /* MDCSlantedRectShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSlantedRectShapeGenerator.h; path = components/ShapeLibrary/src/MDCSlantedRectShapeGenerator.h; sourceTree = "<group>"; };
+		08E1AE3190BF4B83D70AD15B62BCF494 /* UIColor+MaterialElevation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialElevation.m"; path = "components/Elevation/src/UIColor+MaterialElevation.m"; sourceTree = "<group>"; };
+		09268A5484FCC1DD2BEB829C403925F5 /* Gifu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Gifu-Info.plist"; sourceTree = "<group>"; };
+		0ECC1B36A3184449B25FA6D90DD0233C /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		0FD92338DFDE5B208F94F0BD32C112E5 /* MaterialShadowElevationsDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialShadowElevationsDummy.m; path = components/ShadowElevations/src/MaterialShadowElevationsDummy.m; sourceTree = "<group>"; };
+		123B0CB3C97BCBBCFC1502A1E69C67D2 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		12AD143DC144E3F5CB519B12D27C9D80 /* MaterialComponents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MaterialComponents-dummy.m"; sourceTree = "<group>"; };
 		166C54713AAD6F11A8D37CA8744D0C7D /* Pods-TermProjcet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TermProjcet-acknowledgements.plist"; sourceTree = "<group>"; };
-		1825DE5A231BCD76A9641FEE01998878 /* AnimatedFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedFrame.swift; path = Sources/Gifu/Classes/AnimatedFrame.swift; sourceTree = "<group>"; };
+		16882C375ADD1184EDE12ED315BB908D /* MDCCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCornerTreatment.m; path = components/Shapes/src/MDCCornerTreatment.m; sourceTree = "<group>"; };
+		18ABED6C5F9459FF0268DEB391DF4C13 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		190B45AFBE547C0182584EDF2CD9685C /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
 		1B416250B101C408FF77C5884D9E682E /* Pods-TermProjcet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TermProjcet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1DBE71B5A362303AFFF4153303F60B8C /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
-		1E40F25CBAB9BE11D1B05F127B87BD07 /* Gifu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-umbrella.h"; sourceTree = "<group>"; };
-		1E456070E661D2863150D8BC49A81DFC /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		1C5B3FD617DADACD551ADDDA88D397D2 /* MDCShadowElevations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShadowElevations.h; path = components/ShadowElevations/src/MDCShadowElevations.h; sourceTree = "<group>"; };
 		1EF4F59B93841E3A2E5B9A97AF334D83 /* Pods-TermProjcet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TermProjcet-frameworks.sh"; sourceTree = "<group>"; };
-		244D785DCA3EA00E9EA0073B8C675AB8 /* GIFImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFImageView.swift; path = Sources/Gifu/Classes/GIFImageView.swift; sourceTree = "<group>"; };
-		245D84FFBBA37A75F64A34C6430AA751 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
-		25306F17E23C0DC7AD2575A7D5EE8A54 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
-		279AFA0BAEC3DEC2C8208FB3DB27A18A /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
-		29AF708652C6C17741E82266F958CAD9 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		2292E25A85063EB33237B89C9F7A3857 /* UIApplication+MDCAppExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+MDCAppExtensions.m"; path = "components/private/Application/src/UIApplication+MDCAppExtensions.m"; sourceTree = "<group>"; };
+		23BFB28D2491AC2C9EFEFE6684B9C30E /* FSCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.debug.xcconfig; sourceTree = "<group>"; };
+		24361FF9BB916CADF119FED3DF5CFACF /* MDCKeyboardWatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCKeyboardWatcher.h; path = components/private/KeyboardWatcher/src/MDCKeyboardWatcher.h; sourceTree = "<group>"; };
+		25E5435EC92945009542D767D67744C1 /* UIApplication+MDCAppExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+MDCAppExtensions.h"; path = "components/private/Application/src/UIApplication+MDCAppExtensions.h"; sourceTree = "<group>"; };
+		27C141B51D27B8E34B955A55DBEE7604 /* MaterialComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.debug.xcconfig; sourceTree = "<group>"; };
+		285AB37196DDF21F0577ED6A627FEC41 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		2B5FD884C7FF4425DC596E2C35543552 /* UIView+MaterialElevationResponding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MaterialElevationResponding.h"; path = "components/Elevation/src/UIView+MaterialElevationResponding.h"; sourceTree = "<group>"; };
+		396B6A9885C26B25982D8CEE54A33B75 /* UIViewController+MaterialBottomSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MaterialBottomSheet.m"; path = "components/BottomSheet/src/UIViewController+MaterialBottomSheet.m"; sourceTree = "<group>"; };
+		3970E6F23A5259EC488C7832086D5E55 /* MDCSheetBehavior.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSheetBehavior.m; path = components/BottomSheet/src/private/MDCSheetBehavior.m; sourceTree = "<group>"; };
+		3C1A066742306B14A72DFC2A593D53E4 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
 		3D950799B952A2898A46D3339425FFF5 /* Pods-TermProjcet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TermProjcet-Info.plist"; sourceTree = "<group>"; };
-		3DA7B1689FEAB4502BBA238A89334FE6 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
-		3F8DFB36C7F6C11E235DDFD9D7EB4298 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		3EE503946433570EFC7462B9EBF3057C /* MaterialComponents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-umbrella.h"; sourceTree = "<group>"; };
+		3F774E57F2E6ECB6FF2002DD20F9BE9D /* MaterialShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShadowLayer.h; path = components/ShadowLayer/src/MaterialShadowLayer.h; sourceTree = "<group>"; };
 		40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gifu.framework; path = Gifu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		42D9A89A02BD3952EEAFF63C64CBE15F /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
-		49B5E7856F25C1DC29D0BF69A70E994D /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = Sources/Gifu/Extensions/CGSize.swift; sourceTree = "<group>"; };
-		4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4BABEB0811AD3FB96B0EA89F4320CC6A /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
-		4C39DE99A2B301229521EB433C43B96D /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
-		4D34CB59E30C3EB0F671AD0FA70C9224 /* Gifu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.debug.xcconfig; sourceTree = "<group>"; };
-		4FDEA34E51A5D6CF94414D0C8FD6E9A1 /* Gifu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.release.xcconfig; sourceTree = "<group>"; };
-		552ECBF171679BEBB06F9BB9ECCE87A0 /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/Gifu/Extensions/UIImage.swift; sourceTree = "<group>"; };
-		58C17645E5DFA938B3D1DF1BF5567F28 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
-		5C89AA978617021F6FE9429298227DAD /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		446B44AE917F1CAB836DB91E6C11F106 /* MDCElevatable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCElevatable.h; path = components/Elevation/src/MDCElevatable.h; sourceTree = "<group>"; };
+		463D6CC791962C34665B0727DC9118A0 /* UIColor+MaterialBlending.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialBlending.m"; path = "components/private/Color/src/UIColor+MaterialBlending.m"; sourceTree = "<group>"; };
+		4784BEDEB646E920FD908013DB409C5A /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		4B32E97383888BB9D9D3E0CE47B890A4 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		5498590CC58F9D8E0C3B239DEA067E64 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
+		5B1EAD62DA5D58CA4EF748D66011CD37 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		5CBC328F17E809EBFA36AD5DD848D4E9 /* Pods-TermProjcet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TermProjcet.modulemap"; sourceTree = "<group>"; };
-		5CFB806A526C6A17616A6CA2B62B9C07 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
-		66BB10EFA7D353BE35A31A77F65E4F86 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSourceHelpers.swift; path = Sources/Gifu/Helpers/ImageSourceHelpers.swift; sourceTree = "<group>"; };
-		67F575C55868557EEA4FDEB7EA8D8A6B /* Gifu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Gifu-Info.plist"; sourceTree = "<group>"; };
-		6CCF76D45DBCA770B983E0D93C8A4F85 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		5CE199397E67420738C60F82B861CB9A /* MDCCornerTreatment+CornerTypeInitalizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MDCCornerTreatment+CornerTypeInitalizer.h"; path = "components/ShapeLibrary/src/MDCCornerTreatment+CornerTypeInitalizer.h"; sourceTree = "<group>"; };
+		5DB3AD5F7F949D49A238A24FFC271EDA /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		5F3C86ED92AB1789B9076DF41BD9B45D /* Gifu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-prefix.pch"; sourceTree = "<group>"; };
+		5F78A43032249B1FA7D60F4D5D62BF6C /* MaterialAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialAvailability.h; path = components/Availability/src/MaterialAvailability.h; sourceTree = "<group>"; };
+		646A16B80E57E81A0674FEBFBF64F281 /* MDCRoundedCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRoundedCornerTreatment.m; path = components/ShapeLibrary/src/MDCRoundedCornerTreatment.m; sourceTree = "<group>"; };
+		678E52C5763C0812CEA0883EB25CACA6 /* UIColor+MaterialBlending.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialBlending.h"; path = "components/private/Color/src/UIColor+MaterialBlending.h"; sourceTree = "<group>"; };
+		696C464AEA349FF48BB8E3FA681E4742 /* MDCBottomSheetPresentationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetPresentationController.h; path = components/BottomSheet/src/MDCBottomSheetPresentationController.h; sourceTree = "<group>"; };
+		696DEC52B216129892C1774560A17E0F /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		699485E9601FA5C65431F7BEF5C2F5F0 /* Gifu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gifu-dummy.m"; sourceTree = "<group>"; };
+		6ABF866C2CC8DAA0CB8D90AEECA0613C /* MDCBottomSheetTransitionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBottomSheetTransitionController.m; path = components/BottomSheet/src/MDCBottomSheetTransitionController.m; sourceTree = "<group>"; };
+		6ACFDBB0CFCBBE8DB2A70844011782F1 /* FSCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.release.xcconfig; sourceTree = "<group>"; };
+		6B94278A54150AD5FECDA50D7289BC2A /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		6B974F6963FE8003A449C742C005343E /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		6BC3518725ED0791502E99F93252E2EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6CD67BEF1ED858D3ABF30BF3C3BD6867 /* MDCShadowLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShadowLayer.m; path = components/ShadowLayer/src/MDCShadowLayer.m; sourceTree = "<group>"; };
+		6D9A2151F6C7994E7ACC2B3DE1783FAC /* MDCEdgeTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCEdgeTreatment.m; path = components/Shapes/src/MDCEdgeTreatment.m; sourceTree = "<group>"; };
+		6DBBC625A9B8156D2D7A35F56DA49D4B /* MDCSlantedRectShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSlantedRectShapeGenerator.m; path = components/ShapeLibrary/src/MDCSlantedRectShapeGenerator.m; sourceTree = "<group>"; };
+		6E19ECE25EE42F16ACD1361622FD9469 /* MDCPathGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPathGenerator.h; path = components/Shapes/src/MDCPathGenerator.h; sourceTree = "<group>"; };
+		6EC39A1F0913B65BEFB9AC6AA46AC8AE /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
 		7085DB41595EB2F4F77EC18A780BF6ED /* Pods-TermProjcet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TermProjcet-dummy.m"; sourceTree = "<group>"; };
-		7E85B23F5DCD93BE70D2B5ED22281806 /* FSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
+		7098B257C1ACDCEB3C34F9DC35D9C961 /* MDCCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCornerTreatment.h; path = components/Shapes/src/MDCCornerTreatment.h; sourceTree = "<group>"; };
+		710FAB2565600D7E4F4B0D1E9C8FAED7 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		72A8F50DC619327DCB714C84AF4C4796 /* MDCBottomSheetTransitionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetTransitionController.h; path = components/BottomSheet/src/MDCBottomSheetTransitionController.h; sourceTree = "<group>"; };
+		72AA727953268610A4EAC4C224C9F454 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		74EAE6317B56CAEC21E7A3DF8392BABD /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		751688D1E6C0EA116811721AA181FC86 /* GIFAnimatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFAnimatable.swift; path = Sources/Gifu/Classes/GIFAnimatable.swift; sourceTree = "<group>"; };
+		765A58148DD285BED8BE9AE3B0477646 /* MDCCutCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCutCornerTreatment.m; path = components/ShapeLibrary/src/MDCCutCornerTreatment.m; sourceTree = "<group>"; };
+		77E0516CF08A0E1FA39D708E934BAAE9 /* MDCSheetContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSheetContainerView.m; path = components/BottomSheet/src/private/MDCSheetContainerView.m; sourceTree = "<group>"; };
+		77EF3F85C94D55AD1FC0E3E1D528CC39 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		78AA59CAB3C83767938460EDE4972C88 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		79916A2EF1368DC286FADAA7A4F0FF0A /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		799FF44616269DE48BFAD22BC74EF681 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		79D9318BE20253D3B5916DFCC49B838E /* MDCCurvedCornerTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCurvedCornerTreatment.m; path = components/ShapeLibrary/src/MDCCurvedCornerTreatment.m; sourceTree = "<group>"; };
+		7A373B57267400FB5BF76074D86C6D97 /* MDCShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShadowLayer.h; path = components/ShadowLayer/src/MDCShadowLayer.h; sourceTree = "<group>"; };
 		7F7D43CDF2738C9A6FA56AA4E83CFEA2 /* Pods-TermProjcet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TermProjcet.release.xcconfig"; sourceTree = "<group>"; };
-		7FD3B9088DB1300EE313CB1D812AF770 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
 		8390E8EA500B70E205460E10B3BD367E /* Pods-TermProjcet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TermProjcet-umbrella.h"; sourceTree = "<group>"; };
-		88F69C0DBDD37EB99B4CC813989B683F /* FSCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.debug.xcconfig; sourceTree = "<group>"; };
-		8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8ECEEEA11461711EEACD8C2E28A69F76 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
-		91F18652F36094E2EC49EAC4D03B2A61 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		872E996BB0547503D5FD61A1B79C5BC8 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		8770A07D66BF1BFC1CFA98E8496B7967 /* MDCTriangleEdgeTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTriangleEdgeTreatment.h; path = components/ShapeLibrary/src/MDCTriangleEdgeTreatment.h; sourceTree = "<group>"; };
+		8AB8F163BA7A532EBE5B3493CEBEB62F /* MDCCutCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCutCornerTreatment.h; path = components/ShapeLibrary/src/MDCCutCornerTreatment.h; sourceTree = "<group>"; };
+		8B9CD176E991CC22FCE7D7D63BEF4540 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		8D0BF9EDE963D9B202B4CBCEE34D9A71 /* MDCCurvedRectShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCCurvedRectShapeGenerator.m; path = components/ShapeLibrary/src/MDCCurvedRectShapeGenerator.m; sourceTree = "<group>"; };
+		8D4FD338DF86107EAFEF68B0287D2281 /* MDCCurvedRectShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCurvedRectShapeGenerator.h; path = components/ShapeLibrary/src/MDCCurvedRectShapeGenerator.h; sourceTree = "<group>"; };
+		8E952B7E0BB74CB414574E8820C14772 /* UIColor+MaterialDynamic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialDynamic.m"; path = "components/private/Color/src/UIColor+MaterialDynamic.m"; sourceTree = "<group>"; };
+		8F2EEBDECFA85644AA372903F364F1A9 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		8F2FE3D20CEAACD9C6AE6F53F83563D5 /* MDCShapedShadowLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShapedShadowLayer.m; path = components/Shapes/src/MDCShapedShadowLayer.m; sourceTree = "<group>"; };
+		91ACBCC0D5BF801C1C8226562DA968F0 /* Gifu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.release.xcconfig; sourceTree = "<group>"; };
+		91F89C6C5BBB8EE28CB02718F90A48DF /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		921D32A0BE86B1D6FB33F512F8D486FE /* MDCRectangleShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCRectangleShapeGenerator.m; path = components/Shapes/src/MDCRectangleShapeGenerator.m; sourceTree = "<group>"; };
+		946B7FEBA2735ADF4245A401AEF5D6C7 /* MDCShapeGenerating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapeGenerating.h; path = components/Shapes/src/MDCShapeGenerating.h; sourceTree = "<group>"; };
 		95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97FFDF11E84769BD2FEDDCF5A6F9F7D6 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		9A2BC04EE2A298B948A435A9D2410705 /* MDCAvailability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCAvailability.h; path = components/Availability/src/MDCAvailability.h; sourceTree = "<group>"; };
 		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF9D42BDABBAD76199565DF1CF83B18 /* MDCMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCMath.h; path = components/private/Math/src/MDCMath.h; sourceTree = "<group>"; };
+		9C4390D91FC241C70F0D76FDADC901F7 /* MDCPillShapeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPillShapeGenerator.m; path = components/ShapeLibrary/src/MDCPillShapeGenerator.m; sourceTree = "<group>"; };
+		9C967AF816119E0C238BB394C7D7A852 /* MaterialKeyboardWatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialKeyboardWatcher.h; path = components/private/KeyboardWatcher/src/MaterialKeyboardWatcher.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DF7D3CEFA2894D4501D23416EE7EF00 /* Pods-TermProjcet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TermProjcet.debug.xcconfig"; sourceTree = "<group>"; };
-		9EB351B3D83480C7402BA4B249880BF1 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
-		9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		A18E4D1523971207F73044881ED31655 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
-		A323E37A4A786DD41F433DD6B17E4935 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
-		A87C55FB2DC3A5718C6761D5AC4F713A /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
-		AA57ADEBDEEE74A7EDD2369F6539F249 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
-		AC9EDBD99EC196CA33DD064A1243C9C8 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
-		ACEA129653C18B0B380E0CDF9D4024F5 /* Gifu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Gifu.modulemap; sourceTree = "<group>"; };
-		AD45136B853B4EEBD45A2BB65EFF3354 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
-		AE5837D328692D3F6A3804C54B2C2B58 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
-		B07CC5A43C15D3BAAFA8F4F487316109 /* FSCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.release.xcconfig; sourceTree = "<group>"; };
-		B1D7D361D1397EB24E780403486C2B96 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
-		B35DA51C6E746495A533DA23411B65B6 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
-		B56C2F72EDB0FE21CE7154F2A3601F5F /* Gifu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-prefix.pch"; sourceTree = "<group>"; };
-		B6ACCDBA576B35257A6BBF218F098181 /* FrameStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameStore.swift; path = Sources/Gifu/Classes/FrameStore.swift; sourceTree = "<group>"; };
-		C2A524C984C86251215FDCF9D5898750 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		9F2045A3A327540D9B4A5ADA250C3C86 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		9F93D44BCB9D1CD1C5898F4851E9985E /* UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = Sources/Gifu/Extensions/UIImageView.swift; sourceTree = "<group>"; };
+		A10A8DD66B1BE3BEE305D3B74BFFA100 /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
+		A1717CA141A1188BEE98B57C7C6A0386 /* MDCShapedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShapedView.m; path = components/Shapes/src/MDCShapedView.m; sourceTree = "<group>"; };
+		A304724B071A16A4F2289AEDABF75D6A /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents.framework; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4752DA6480240753BE99486AEA41BCA /* MDCKeyboardWatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCKeyboardWatcher.m; path = components/private/KeyboardWatcher/src/MDCKeyboardWatcher.m; sourceTree = "<group>"; };
+		A6B09831134063D4E6A31FF30A3EA850 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		A71564A7C32F9A0D72A335871A824030 /* ImageSourceHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageSourceHelpers.swift; path = Sources/Gifu/Helpers/ImageSourceHelpers.swift; sourceTree = "<group>"; };
+		A9D7A839810866B23C0D21C7D3F1DBC4 /* MaterialComponents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialComponents-prefix.pch"; sourceTree = "<group>"; };
+		AA479E462C106F212B6A27A258A0DC45 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		AB94F9AEB031CEF4DF0F5137EAD42107 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		AC8E89E89E6394FD344B69235265BF5E /* MaterialMathDummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MaterialMathDummy.m; path = components/private/Math/src/MaterialMathDummy.m; sourceTree = "<group>"; };
+		ACDE318B1835F087A472DE0080550102 /* UIView+MaterialElevationResponding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MaterialElevationResponding.m"; path = "components/Elevation/src/UIView+MaterialElevationResponding.m"; sourceTree = "<group>"; };
+		AD48F19793D6A335560302414A2864B5 /* MDCEdgeTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCEdgeTreatment.h; path = components/Shapes/src/MDCEdgeTreatment.h; sourceTree = "<group>"; };
+		ADE94FEEF9798645363881D82C4D5E3B /* Gifu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Gifu.modulemap; sourceTree = "<group>"; };
+		AFC72E828EF167EF56AAB172869704BC /* AnimatedFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedFrame.swift; path = Sources/Gifu/Classes/AnimatedFrame.swift; sourceTree = "<group>"; };
+		B116350BEC5FDC9200D0E3682A89CC4A /* MDCTriangleEdgeTreatment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTriangleEdgeTreatment.m; path = components/ShapeLibrary/src/MDCTriangleEdgeTreatment.m; sourceTree = "<group>"; };
+		B143690B13931BA30C196DC75E344B63 /* MDCPathGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPathGenerator.m; path = components/Shapes/src/MDCPathGenerator.m; sourceTree = "<group>"; };
+		B393BBDEF7F802995864370B2DCCC960 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		B55C418B397F54B7457C187DE2E09E87 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = Sources/Gifu/Extensions/CGSize.swift; sourceTree = "<group>"; };
+		B6054C3F749D7A5852580E7C66A51F32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B6BC0F0C64456008D283AB155C73F038 /* MaterialComponents-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MaterialComponents-Info.plist"; sourceTree = "<group>"; };
+		B9431D066B63C7DB79FD23885B46DE49 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		BAE7F99958D09532D8B704A066A8976A /* MDCBottomSheetController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBottomSheetController.h; path = components/BottomSheet/src/MDCBottomSheetController.h; sourceTree = "<group>"; };
 		C2D6EF572789C754A988BBBE41209652 /* Pods_TermProjcet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TermProjcet.framework; path = "Pods-TermProjcet.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C49511BC0A20CD16D8142C52284047B8 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
-		C6FA32D8A1158A05D50BE0EA74534C38 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
-		CB0A7ABD96676EF51DA67F9703D72DEB /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
-		CDB4ACF3C35343DAEDE9C154BC899F56 /* Gifu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Gifu.h; path = Sources/Gifu.h; sourceTree = "<group>"; };
-		CE7C99F811C4D4CA60C6C07FEFC6E587 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Gifu/Extensions/Array.swift; sourceTree = "<group>"; };
-		CFB513992275B9FB8CF30AF39DC9391F /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
-		CFBC39EA76AD5B25198E54A5A9197BEA /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
-		D8FAD84D5B6761C5B8C120C3B3F6603D /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
-		DAFBCF47D1C937344D91AF890FCC8A75 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
-		DE5CA7CFB1D72732687FDD5165A34ABE /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
-		DE5E8E92F760B92C676D2E2D4AA19836 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
-		E008B07B310D1D83FDAC755ECFF30286 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
-		EE0F27519A1C3BF98256732AB5F31B9E /* UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageView.swift; path = Sources/Gifu/Extensions/UIImageView.swift; sourceTree = "<group>"; };
-		F3F6F24B62EF3A5DD31D7B489EB48F71 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
-		F4B558C8BBB518FD926C6F5E0AC1E552 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
-		F57712F08241AA2D767A56B174A0F3BB /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Sources/Gifu/Classes/Animator.swift; sourceTree = "<group>"; };
-		FB4CE430EA006DD26D2868F41EAB5F02 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
-		FE9ED0099BB20DCA532ADE300174F39B /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		FF20097B8EB149D9011790B2DC030D56 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		C3FC05B8230430F89E05E0FBB98608B5 /* MaterialMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialMath.h; path = components/private/Math/src/MaterialMath.h; sourceTree = "<group>"; };
+		C40DBE382728E876D1339AD381952030 /* UIColor+MaterialElevation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialElevation.h"; path = "components/Elevation/src/UIColor+MaterialElevation.h"; sourceTree = "<group>"; };
+		C40FA30E323B39C4CA41530EBA0E2131 /* MDCCurvedCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCCurvedCornerTreatment.h; path = components/ShapeLibrary/src/MDCCurvedCornerTreatment.h; sourceTree = "<group>"; };
+		C5CF516E820FC91F8470E5C672F5CACB /* MDCCornerTreatment+CornerTypeInitalizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MDCCornerTreatment+CornerTypeInitalizer.m"; path = "components/ShapeLibrary/src/MDCCornerTreatment+CornerTypeInitalizer.m"; sourceTree = "<group>"; };
+		C6693D71DCF5483B1556C03A59DA7093 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		C78C322FAA2C3A9437173FB9BFA82000 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		C7FDCC5D3E16A36CBD56A0869C55091F /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		C8AB3136045D06C92FCFBE1642E5B90A /* MaterialElevation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialElevation.h; path = components/Elevation/src/MaterialElevation.h; sourceTree = "<group>"; };
+		C96B8826FE26724F50DCF846D1B413EC /* MDCSheetContainerViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetContainerViewDelegate.h; path = components/BottomSheet/src/private/MDCSheetContainerViewDelegate.h; sourceTree = "<group>"; };
+		CA15E120246657020C4995D06F7FC04F /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		CAF06F0F79B08119308CC385FE73D7CF /* FSCalendar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FSCalendar-Info.plist"; sourceTree = "<group>"; };
+		CAFEA24CF91D4EFF6D75CC3EA802AC76 /* MDCRoundedCornerTreatment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRoundedCornerTreatment.h; path = components/ShapeLibrary/src/MDCRoundedCornerTreatment.h; sourceTree = "<group>"; };
+		CD4C4BC686C5BF602C13713EC2BF9557 /* MaterialShadowElevations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShadowElevations.h; path = components/ShadowElevations/src/MaterialShadowElevations.h; sourceTree = "<group>"; };
+		CD88684069CFAA0B0ECB7B4FB5198437 /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/Gifu/Extensions/UIImage.swift; sourceTree = "<group>"; };
+		D1087154BC5A638BAE26A80BA1D0A9FE /* MDCElevationOverriding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCElevationOverriding.h; path = components/Elevation/src/MDCElevationOverriding.h; sourceTree = "<group>"; };
+		D152010DE396C89200F6CD9BAB1D9F4D /* MDCShapedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapedView.h; path = components/Shapes/src/MDCShapedView.h; sourceTree = "<group>"; };
+		D1A933725754E66273648AA762A63B4B /* MaterialComponents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MaterialComponents.modulemap; sourceTree = "<group>"; };
+		D1EE7BD3A5CE9B6BAE51BC3B047DB7BC /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		D315E98BCAFFE0DED547D071FA0F6BA5 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Gifu/Extensions/Array.swift; sourceTree = "<group>"; };
+		D3983F6E75ED014414F9F235B1D2FBC8 /* FrameStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameStore.swift; path = Sources/Gifu/Classes/FrameStore.swift; sourceTree = "<group>"; };
+		D7B6AAB66683D04E1677CD0236F9A4A0 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		DA4FAA0743AF6922ADA89E4C558E82F5 /* MaterialShapes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialShapes.h; path = components/Shapes/src/MaterialShapes.h; sourceTree = "<group>"; };
+		DCD09DF6E4E304989B94E8F5FA7079B8 /* MDCBottomSheetPresentationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBottomSheetPresentationController.m; path = components/BottomSheet/src/MDCBottomSheetPresentationController.m; sourceTree = "<group>"; };
+		DDA10DE439E07C65E26684870E976784 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		DDEA96739D90F7B1428E4B5F721956E6 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		DE0D81EC4B838007479CC04EC54D853C /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		DFA0B5DBBE2689571134F8D1F7113685 /* MDCSheetBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetBehavior.h; path = components/BottomSheet/src/private/MDCSheetBehavior.h; sourceTree = "<group>"; };
+		E04A730840249897B9D7E8E44E88A21A /* MaterialApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialApplication.h; path = components/private/Application/src/MaterialApplication.h; sourceTree = "<group>"; };
+		E0631A071A524E7DE540011ED460E6E5 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		E3209F578CE424F95D083B2BADD602CA /* Gifu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gifu-umbrella.h"; sourceTree = "<group>"; };
+		E33700A8763143797EA5B475E024AD0F /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		E43271CB4B1893B78B09B09DBC392908 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		E43BC422354FA9899D18BC869B9237A1 /* MaterialColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MaterialColor.h; path = components/private/Color/src/MaterialColor.h; sourceTree = "<group>"; };
+		E5D6696F190CB908C5CB6536C69A3F33 /* MDCShapeMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapeMediator.h; path = components/Shapes/src/MDCShapeMediator.h; sourceTree = "<group>"; };
+		E7D2248CA7FDF22895AD0E0FEE5C0496 /* MDCBottomSheetController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBottomSheetController.m; path = components/BottomSheet/src/MDCBottomSheetController.m; sourceTree = "<group>"; };
+		E80186FFD8F3C1418A0FB8894920DDDE /* Gifu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gifu.debug.xcconfig; sourceTree = "<group>"; };
+		E8162AECFC3092967B5AF367D5E261BC /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		E85D754A1AFF7C9519A7B0B973C0EB33 /* MDCDraggableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCDraggableView.h; path = components/BottomSheet/src/private/MDCDraggableView.h; sourceTree = "<group>"; };
+		E900DE720B947AAF34B3DB04ECA62081 /* MDCSheetState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSheetState.h; path = components/BottomSheet/src/MDCSheetState.h; sourceTree = "<group>"; };
+		E918F38D24383999FC15A6CE7C55BF45 /* GIFImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFImageView.swift; path = Sources/Gifu/Classes/GIFImageView.swift; sourceTree = "<group>"; };
+		EBB414C807036B74A60053C35CF7B84C /* MaterialComponents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialComponents.release.xcconfig; sourceTree = "<group>"; };
+		ED480E11A10067F01138200DD2E8A201 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		F2F0E5D03D89DCB1C734666EC7D303EB /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		F44DD146BBB32E368B0AF6A3339B7004 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		F5C71C845401A909C1AE16F832F62AF3 /* MDCShapedShadowLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCShapedShadowLayer.h; path = components/Shapes/src/MDCShapedShadowLayer.h; sourceTree = "<group>"; };
+		F7F71A8C6C08AFF6B8D46D88F7E126F3 /* MDCRectangleShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCRectangleShapeGenerator.h; path = components/Shapes/src/MDCRectangleShapeGenerator.h; sourceTree = "<group>"; };
+		F940385DFACA64E40574221D7D731413 /* MDCShapeMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCShapeMediator.m; path = components/Shapes/src/MDCShapeMediator.m; sourceTree = "<group>"; };
+		FA044F02CBD03561CF887E91D2600C37 /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Sources/Gifu/Classes/Animator.swift; sourceTree = "<group>"; };
+		FA7F6BCD242D50B31A42C0BC7EC4C4E8 /* MDCDraggableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCDraggableView.m; path = components/BottomSheet/src/private/MDCDraggableView.m; sourceTree = "<group>"; };
+		FC8D5751397F89A1344552AEB7363F0E /* MDCPillShapeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPillShapeGenerator.h; path = components/ShapeLibrary/src/MDCPillShapeGenerator.h; sourceTree = "<group>"; };
+		FCCCAB52D21902200ABCAA273A883E68 /* UIColor+MaterialDynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialDynamic.h"; path = "components/private/Color/src/UIColor+MaterialDynamic.h"; sourceTree = "<group>"; };
+		FE77F62CA45E41F2107B98EFDDB24D89 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7F4B3720CDF2AD93241E198E3AB64F25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7AD3D64ECA31F3BB35F029102F047E88 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9727840973A9C2692E58F7089A7C243E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,65 +397,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BED3178971CB04BB3492FDF570011C51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BA64B1B6C5CB7E0F0FDF3FB8AD734F /* Foundation.framework in Frameworks */,
+				DF469589BC3403B2A47C6AD8B2BBE3DA /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5372EDDE85385B527A1DD10B9F8A49F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01AA52F65548DA36FF6145ADF2CC930 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+		28FAAFCBBAB825E68425CCA31E730948 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F0A778C0229E9BF1FD97896B93F3272B /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3EE9E33117BF059E41AEBFFBEC7322A6 /* Gifu */ = {
-			isa = PBXGroup;
-			children = (
-				1825DE5A231BCD76A9641FEE01998878 /* AnimatedFrame.swift */,
-				F57712F08241AA2D767A56B174A0F3BB /* Animator.swift */,
-				CE7C99F811C4D4CA60C6C07FEFC6E587 /* Array.swift */,
-				49B5E7856F25C1DC29D0BF69A70E994D /* CGSize.swift */,
-				B6ACCDBA576B35257A6BBF218F098181 /* FrameStore.swift */,
-				08D2ACE32C9BBFB77DBEF1EF6E8B1A69 /* GIFAnimatable.swift */,
-				244D785DCA3EA00E9EA0073B8C675AB8 /* GIFImageView.swift */,
-				CDB4ACF3C35343DAEDE9C154BC899F56 /* Gifu.h */,
-				66BB10EFA7D353BE35A31A77F65E4F86 /* ImageSourceHelpers.swift */,
-				552ECBF171679BEBB06F9BB9ECCE87A0 /* UIImage.swift */,
-				EE0F27519A1C3BF98256732AB5F31B9E /* UIImageView.swift */,
-				6C3599B258B79C38C5396B3BB5B39BE1 /* Support Files */,
-			);
-			name = Gifu;
-			path = Gifu;
-			sourceTree = "<group>";
-		};
-		5346C1E8F7CC455DA55C4D34030E6ABF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0278E9EABD7F23063C13580ABB21D9A7 /* FSCalendar.modulemap */,
-				0EBF1EDE2977A2B65B33C5EDADD7722A /* FSCalendar-dummy.m */,
-				7E85B23F5DCD93BE70D2B5ED22281806 /* FSCalendar-Info.plist */,
-				DE5CA7CFB1D72732687FDD5165A34ABE /* FSCalendar-prefix.pch */,
-				91F18652F36094E2EC49EAC4D03B2A61 /* FSCalendar-umbrella.h */,
-				88F69C0DBDD37EB99B4CC813989B683F /* FSCalendar.debug.xcconfig */,
-				B07CC5A43C15D3BAAFA8F4F487316109 /* FSCalendar.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FSCalendar";
-			sourceTree = "<group>";
-		};
-		6C3599B258B79C38C5396B3BB5B39BE1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ACEA129653C18B0B380E0CDF9D4024F5 /* Gifu.modulemap */,
-				0C57B613BF9031EECBB85B263960AB0E /* Gifu-dummy.m */,
-				67F575C55868557EEA4FDEB7EA8D8A6B /* Gifu-Info.plist */,
-				B56C2F72EDB0FE21CE7154F2A3601F5F /* Gifu-prefix.pch */,
-				1E40F25CBAB9BE11D1B05F127B87BD07 /* Gifu-umbrella.h */,
-				4D34CB59E30C3EB0F671AD0FA70C9224 /* Gifu.debug.xcconfig */,
-				4FDEA34E51A5D6CF94414D0C8FD6E9A1 /* Gifu.release.xcconfig */,
+				ADE94FEEF9798645363881D82C4D5E3B /* Gifu.modulemap */,
+				699485E9601FA5C65431F7BEF5C2F5F0 /* Gifu-dummy.m */,
+				09268A5484FCC1DD2BEB829C403925F5 /* Gifu-Info.plist */,
+				5F3C86ED92AB1789B9076DF41BD9B45D /* Gifu-prefix.pch */,
+				E3209F578CE424F95D083B2BADD602CA /* Gifu-umbrella.h */,
+				E80186FFD8F3C1418A0FB8894920DDDE /* Gifu.debug.xcconfig */,
+				91ACBCC0D5BF801C1C8226562DA968F0 /* Gifu.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Gifu";
+			sourceTree = "<group>";
+		};
+		2E65AD599254482AEF63BA2C26D0FBAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
+				95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */,
+				40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */,
+				A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */,
+				C2D6EF572789C754A988BBBE41209652 /* Pods_TermProjcet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C3BE030F2B6E05F145DB84F7E7747C /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				3C1A066742306B14A72DFC2A593D53E4 /* DPDConstants.swift */,
+				696DEC52B216129892C1774560A17E0F /* DPDKeyboardListener.swift */,
+				A6B09831134063D4E6A31FF30A3EA850 /* DPDUIView+Extension.swift */,
+				A304724B071A16A4F2289AEDABF75D6A /* DropDown.swift */,
+				B9431D066B63C7DB79FD23885B46DE49 /* DropDown+Appearance.swift */,
+				F44DD146BBB32E368B0AF6A3339B7004 /* DropDownCell.swift */,
+				DBACA908B436B1A8E5D407ED0E420B0D /* Resources */,
+				D3372E914CD4BB16C004BC6348342F01 /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		5C3F59B506A1ED7129FEA09C5CD71AC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54C3BE030F2B6E05F145DB84F7E7747C /* DropDown */,
+				B23D8C41C33CA25E85709441790E7681 /* FSCalendar */,
+				9DCAD9D067458931F188EBA0120EA966 /* Gifu */,
+				A0B04F1D0144938B5F37519E7FEDF6F8 /* MaterialComponents */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6613B988044E61CD7F846601253F9521 /* ShapeLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				06CD3A49F4725C35631128C404A5157D /* MaterialShapeLibrary.h */,
+				5CE199397E67420738C60F82B861CB9A /* MDCCornerTreatment+CornerTypeInitalizer.h */,
+				C5CF516E820FC91F8470E5C672F5CACB /* MDCCornerTreatment+CornerTypeInitalizer.m */,
+				C40FA30E323B39C4CA41530EBA0E2131 /* MDCCurvedCornerTreatment.h */,
+				79D9318BE20253D3B5916DFCC49B838E /* MDCCurvedCornerTreatment.m */,
+				8D4FD338DF86107EAFEF68B0287D2281 /* MDCCurvedRectShapeGenerator.h */,
+				8D0BF9EDE963D9B202B4CBCEE34D9A71 /* MDCCurvedRectShapeGenerator.m */,
+				8AB8F163BA7A532EBE5B3493CEBEB62F /* MDCCutCornerTreatment.h */,
+				765A58148DD285BED8BE9AE3B0477646 /* MDCCutCornerTreatment.m */,
+				FC8D5751397F89A1344552AEB7363F0E /* MDCPillShapeGenerator.h */,
+				9C4390D91FC241C70F0D76FDADC901F7 /* MDCPillShapeGenerator.m */,
+				CAFEA24CF91D4EFF6D75CC3EA802AC76 /* MDCRoundedCornerTreatment.h */,
+				646A16B80E57E81A0674FEBFBF64F281 /* MDCRoundedCornerTreatment.m */,
+				08C75398064ED7258B5652E455F34D0C /* MDCSlantedRectShapeGenerator.h */,
+				6DBBC625A9B8156D2D7A35F56DA49D4B /* MDCSlantedRectShapeGenerator.m */,
+				8770A07D66BF1BFC1CFA98E8496B7967 /* MDCTriangleEdgeTreatment.h */,
+				B116350BEC5FDC9200D0E3682A89CC4A /* MDCTriangleEdgeTreatment.m */,
+			);
+			name = ShapeLibrary;
 			sourceTree = "<group>";
 		};
 		6DD15CC62E389BED007A85ED93D8852E /* Pods-TermProjcet */ = {
@@ -299,88 +512,146 @@
 			path = "Target Support Files/Pods-TermProjcet";
 			sourceTree = "<group>";
 		};
-		82AB4DB7FA34E7C7731557625210F196 /* Resources */ = {
+		6EAF376015DED0ADE46BE1626837CAC3 /* private */ = {
 			isa = PBXGroup;
 			children = (
-				7FD3B9088DB1300EE313CB1D812AF770 /* DropDownCell.xib */,
+				710B2D5A1E8D2799073083ACF3121192 /* Application */,
+				CD9304DF20F03F32C7ACDCF743FF614A /* Color */,
+				E2BE6B45F3A03639826544E28601F9B3 /* KeyboardWatcher */,
+				A2784AA7C84DDD6E0EBAA21D7946A1D1 /* Math */,
 			);
-			name = Resources;
+			name = private;
 			sourceTree = "<group>";
 		};
-		8F29BDBE7BA724305F1CCB07A76720B9 /* Products */ = {
+		710B2D5A1E8D2799073083ACF3121192 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
-				95209B8BB966524BC76543F99C75F5FE /* FSCalendar.framework */,
-				40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */,
-				C2D6EF572789C754A988BBBE41209652 /* Pods_TermProjcet.framework */,
+				E04A730840249897B9D7E8E44E88A21A /* MaterialApplication.h */,
+				25E5435EC92945009542D767D67744C1 /* UIApplication+MDCAppExtensions.h */,
+				2292E25A85063EB33237B89C9F7A3857 /* UIApplication+MDCAppExtensions.m */,
 			);
-			name = Products;
+			name = Application;
 			sourceTree = "<group>";
 		};
-		93DBA21C21588BE6E84470513B380213 /* Pods */ = {
+		75F2E97052FA9AEDAB425BB43F8D6E83 /* ShadowLayer */ = {
 			isa = PBXGroup;
 			children = (
-				C5C5DA83391C2FF20BDFBBD93152F143 /* DropDown */,
-				965971BBE2376BEF968D1A3AB31B4294 /* FSCalendar */,
-				3EE9E33117BF059E41AEBFFBEC7322A6 /* Gifu */,
+				3F774E57F2E6ECB6FF2002DD20F9BE9D /* MaterialShadowLayer.h */,
+				7A373B57267400FB5BF76074D86C6D97 /* MDCShadowLayer.h */,
+				6CD67BEF1ED858D3ABF30BF3C3BD6867 /* MDCShadowLayer.m */,
 			);
-			name = Pods;
+			name = ShadowLayer;
 			sourceTree = "<group>";
 		};
-		965971BBE2376BEF968D1A3AB31B4294 /* FSCalendar */ = {
+		7DC58827AD13F3A85B3FDDA03CE24715 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE5837D328692D3F6A3804C54B2C2B58 /* FSCalendar.h */,
-				A18E4D1523971207F73044881ED31655 /* FSCalendar.m */,
-				245D84FFBBA37A75F64A34C6430AA751 /* FSCalendarAppearance.h */,
-				29AF708652C6C17741E82266F958CAD9 /* FSCalendarAppearance.m */,
-				F4B558C8BBB518FD926C6F5E0AC1E552 /* FSCalendarCalculator.h */,
-				A323E37A4A786DD41F433DD6B17E4935 /* FSCalendarCalculator.m */,
-				1DBE71B5A362303AFFF4153303F60B8C /* FSCalendarCell.h */,
-				CB0A7ABD96676EF51DA67F9703D72DEB /* FSCalendarCell.m */,
-				3DA7B1689FEAB4502BBA238A89334FE6 /* FSCalendarCollectionView.h */,
-				C49511BC0A20CD16D8142C52284047B8 /* FSCalendarCollectionView.m */,
-				12D5AA3A6E682D908B252723A352315C /* FSCalendarCollectionViewLayout.h */,
-				1E456070E661D2863150D8BC49A81DFC /* FSCalendarCollectionViewLayout.m */,
-				B35DA51C6E746495A533DA23411B65B6 /* FSCalendarConstants.h */,
-				FB4CE430EA006DD26D2868F41EAB5F02 /* FSCalendarConstants.m */,
-				5CFB806A526C6A17616A6CA2B62B9C07 /* FSCalendarDelegationFactory.h */,
-				B1D7D361D1397EB24E780403486C2B96 /* FSCalendarDelegationFactory.m */,
-				97FFDF11E84769BD2FEDDCF5A6F9F7D6 /* FSCalendarDelegationProxy.h */,
-				DE5E8E92F760B92C676D2E2D4AA19836 /* FSCalendarDelegationProxy.m */,
-				CFBC39EA76AD5B25198E54A5A9197BEA /* FSCalendarDynamicHeader.h */,
-				4BABEB0811AD3FB96B0EA89F4320CC6A /* FSCalendarExtensions.h */,
-				8ECEEEA11461711EEACD8C2E28A69F76 /* FSCalendarExtensions.m */,
-				CFB513992275B9FB8CF30AF39DC9391F /* FSCalendarHeaderView.h */,
-				25306F17E23C0DC7AD2575A7D5EE8A54 /* FSCalendarHeaderView.m */,
-				9EB351B3D83480C7402BA4B249880BF1 /* FSCalendarSeparatorDecorationView.h */,
-				5C89AA978617021F6FE9429298227DAD /* FSCalendarSeparatorDecorationView.m */,
-				FE9ED0099BB20DCA532ADE300174F39B /* FSCalendarStickyHeader.h */,
-				3F8DFB36C7F6C11E235DDFD9D7EB4298 /* FSCalendarStickyHeader.m */,
-				E008B07B310D1D83FDAC755ECFF30286 /* FSCalendarTransitionCoordinator.h */,
-				58C17645E5DFA938B3D1DF1BF5567F28 /* FSCalendarTransitionCoordinator.m */,
-				AD45136B853B4EEBD45A2BB65EFF3354 /* FSCalendarWeekdayView.h */,
-				4C39DE99A2B301229521EB433C43B96D /* FSCalendarWeekdayView.m */,
-				5346C1E8F7CC455DA55C4D34030E6ABF /* Support Files */,
+				72AA727953268610A4EAC4C224C9F454 /* FSCalendar.modulemap */,
+				6B94278A54150AD5FECDA50D7289BC2A /* FSCalendar-dummy.m */,
+				CAF06F0F79B08119308CC385FE73D7CF /* FSCalendar-Info.plist */,
+				285AB37196DDF21F0577ED6A627FEC41 /* FSCalendar-prefix.pch */,
+				123B0CB3C97BCBBCFC1502A1E69C67D2 /* FSCalendar-umbrella.h */,
+				23BFB28D2491AC2C9EFEFE6684B9C30E /* FSCalendar.debug.xcconfig */,
+				6ACFDBB0CFCBBE8DB2A70844011782F1 /* FSCalendar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
+			sourceTree = "<group>";
+		};
+		9DCAD9D067458931F188EBA0120EA966 /* Gifu */ = {
+			isa = PBXGroup;
+			children = (
+				AFC72E828EF167EF56AAB172869704BC /* AnimatedFrame.swift */,
+				FA044F02CBD03561CF887E91D2600C37 /* Animator.swift */,
+				D315E98BCAFFE0DED547D071FA0F6BA5 /* Array.swift */,
+				B55C418B397F54B7457C187DE2E09E87 /* CGSize.swift */,
+				D3983F6E75ED014414F9F235B1D2FBC8 /* FrameStore.swift */,
+				751688D1E6C0EA116811721AA181FC86 /* GIFAnimatable.swift */,
+				E918F38D24383999FC15A6CE7C55BF45 /* GIFImageView.swift */,
+				08BE7087EF53B41A656853BED1651FE1 /* Gifu.h */,
+				A71564A7C32F9A0D72A335871A824030 /* ImageSourceHelpers.swift */,
+				CD88684069CFAA0B0ECB7B4FB5198437 /* UIImage.swift */,
+				9F93D44BCB9D1CD1C5898F4851E9985E /* UIImageView.swift */,
+				28FAAFCBBAB825E68425CCA31E730948 /* Support Files */,
+			);
+			name = Gifu;
+			path = Gifu;
+			sourceTree = "<group>";
+		};
+		A0B04F1D0144938B5F37519E7FEDF6F8 /* MaterialComponents */ = {
+			isa = PBXGroup;
+			children = (
+				ABF10B8C782C55315B6CD80726A0F23B /* Availability */,
+				FAB48CDB04CB112F846823D4083280F6 /* BottomSheet */,
+				D2C4198B64D492409A8390B127563495 /* Elevation */,
+				6EAF376015DED0ADE46BE1626837CAC3 /* private */,
+				C04CC9B695A9671333271D71AF72310D /* ShadowElevations */,
+				75F2E97052FA9AEDAB425BB43F8D6E83 /* ShadowLayer */,
+				6613B988044E61CD7F846601253F9521 /* ShapeLibrary */,
+				E36F5643482E6B68CEDB5CEA825EF5CA /* Shapes */,
+				F2360CA6EF3CEEB55806C3D6FA0ED495 /* Support Files */,
+			);
+			name = MaterialComponents;
+			path = MaterialComponents;
+			sourceTree = "<group>";
+		};
+		A2784AA7C84DDD6E0EBAA21D7946A1D1 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				C3FC05B8230430F89E05E0FBB98608B5 /* MaterialMath.h */,
+				AC8E89E89E6394FD344B69235265BF5E /* MaterialMathDummy.m */,
+				9BF9D42BDABBAD76199565DF1CF83B18 /* MDCMath.h */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		ABF10B8C782C55315B6CD80726A0F23B /* Availability */ = {
+			isa = PBXGroup;
+			children = (
+				5F78A43032249B1FA7D60F4D5D62BF6C /* MaterialAvailability.h */,
+				9A2BC04EE2A298B948A435A9D2410705 /* MDCAvailability.h */,
+			);
+			name = Availability;
+			sourceTree = "<group>";
+		};
+		B23D8C41C33CA25E85709441790E7681 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				C78C322FAA2C3A9437173FB9BFA82000 /* FSCalendar.h */,
+				6B974F6963FE8003A449C742C005343E /* FSCalendar.m */,
+				E43271CB4B1893B78B09B09DBC392908 /* FSCalendarAppearance.h */,
+				0ECC1B36A3184449B25FA6D90DD0233C /* FSCalendarAppearance.m */,
+				74EAE6317B56CAEC21E7A3DF8392BABD /* FSCalendarCalculator.h */,
+				E33700A8763143797EA5B475E024AD0F /* FSCalendarCalculator.m */,
+				799FF44616269DE48BFAD22BC74EF681 /* FSCalendarCell.h */,
+				DDA10DE439E07C65E26684870E976784 /* FSCalendarCell.m */,
+				CA15E120246657020C4995D06F7FC04F /* FSCalendarCollectionView.h */,
+				78AA59CAB3C83767938460EDE4972C88 /* FSCalendarCollectionView.m */,
+				ED480E11A10067F01138200DD2E8A201 /* FSCalendarCollectionViewLayout.h */,
+				DDEA96739D90F7B1428E4B5F721956E6 /* FSCalendarCollectionViewLayout.m */,
+				A10A8DD66B1BE3BEE305D3B74BFFA100 /* FSCalendarConstants.h */,
+				B393BBDEF7F802995864370B2DCCC960 /* FSCalendarConstants.m */,
+				E8162AECFC3092967B5AF367D5E261BC /* FSCalendarDelegationFactory.h */,
+				77EF3F85C94D55AD1FC0E3E1D528CC39 /* FSCalendarDelegationFactory.m */,
+				FE77F62CA45E41F2107B98EFDDB24D89 /* FSCalendarDelegationProxy.h */,
+				710FAB2565600D7E4F4B0D1E9C8FAED7 /* FSCalendarDelegationProxy.m */,
+				E0631A071A524E7DE540011ED460E6E5 /* FSCalendarDynamicHeader.h */,
+				8F2EEBDECFA85644AA372903F364F1A9 /* FSCalendarExtensions.h */,
+				F2F0E5D03D89DCB1C734666EC7D303EB /* FSCalendarExtensions.m */,
+				C7FDCC5D3E16A36CBD56A0869C55091F /* FSCalendarHeaderView.h */,
+				872E996BB0547503D5FD61A1B79C5BC8 /* FSCalendarHeaderView.m */,
+				5498590CC58F9D8E0C3B239DEA067E64 /* FSCalendarSeparatorDecorationView.h */,
+				4B32E97383888BB9D9D3E0CE47B890A4 /* FSCalendarSeparatorDecorationView.m */,
+				18ABED6C5F9459FF0268DEB391DF4C13 /* FSCalendarStickyHeader.h */,
+				190B45AFBE547C0182584EDF2CD9685C /* FSCalendarStickyHeader.m */,
+				AA479E462C106F212B6A27A258A0DC45 /* FSCalendarTransitionCoordinator.h */,
+				AB94F9AEB031CEF4DF0F5137EAD42107 /* FSCalendarTransitionCoordinator.m */,
+				91F89C6C5BBB8EE28CB02718F90A48DF /* FSCalendarWeekdayView.h */,
+				D1EE7BD3A5CE9B6BAE51BC3B047DB7BC /* FSCalendarWeekdayView.m */,
+				7DC58827AD13F3A85B3FDDA03CE24715 /* Support Files */,
 			);
 			name = FSCalendar;
 			path = FSCalendar;
-			sourceTree = "<group>";
-		};
-		A6E69DF11AE2CD31052DC7A1BC41A8E3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A87C55FB2DC3A5718C6761D5AC4F713A /* DropDown.modulemap */,
-				279AFA0BAEC3DEC2C8208FB3DB27A18A /* DropDown-dummy.m */,
-				D8FAD84D5B6761C5B8C120C3B3F6603D /* DropDown-Info.plist */,
-				C2A524C984C86251215FDCF9D5898750 /* DropDown-prefix.pch */,
-				6CCF76D45DBCA770B983E0D93C8A4F85 /* DropDown-umbrella.h */,
-				FF20097B8EB149D9011790B2DC030D56 /* DropDown.debug.xcconfig */,
-				DAFBCF47D1C937344D91AF890FCC8A75 /* DropDown.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DropDown";
 			sourceTree = "<group>";
 		};
 		B92E6D509ADAACA98B859D02151FAFE7 /* Targets Support Files */ = {
@@ -391,51 +662,229 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C5C5DA83391C2FF20BDFBBD93152F143 /* DropDown */ = {
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC9EDBD99EC196CA33DD064A1243C9C8 /* DPDConstants.swift */,
-				42D9A89A02BD3952EEAFF63C64CBE15F /* DPDKeyboardListener.swift */,
-				0AC6B07624A7C566656AE862815FBC78 /* DPDUIView+Extension.swift */,
-				AA57ADEBDEEE74A7EDD2369F6539F249 /* DropDown.swift */,
-				F3F6F24B62EF3A5DD31D7B489EB48F71 /* DropDown+Appearance.swift */,
-				C6FA32D8A1158A05D50BE0EA74534C38 /* DropDownCell.swift */,
-				82AB4DB7FA34E7C7731557625210F196 /* Resources */,
-				A6E69DF11AE2CD31052DC7A1BC41A8E3 /* Support Files */,
+				E4FF81C57BD7F145A046F6589E1EE456 /* iOS */,
 			);
-			name = DropDown;
-			path = DropDown;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C04CC9B695A9671333271D71AF72310D /* ShadowElevations */ = {
+			isa = PBXGroup;
+			children = (
+				CD4C4BC686C5BF602C13713EC2BF9557 /* MaterialShadowElevations.h */,
+				0FD92338DFDE5B208F94F0BD32C112E5 /* MaterialShadowElevationsDummy.m */,
+				1C5B3FD617DADACD551ADDDA88D397D2 /* MDCShadowElevations.h */,
+			);
+			name = ShadowElevations;
+			sourceTree = "<group>";
+		};
+		CD9304DF20F03F32C7ACDCF743FF614A /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				E43BC422354FA9899D18BC869B9237A1 /* MaterialColor.h */,
+				678E52C5763C0812CEA0883EB25CACA6 /* UIColor+MaterialBlending.h */,
+				463D6CC791962C34665B0727DC9118A0 /* UIColor+MaterialBlending.m */,
+				FCCCAB52D21902200ABCAA273A883E68 /* UIColor+MaterialDynamic.h */,
+				8E952B7E0BB74CB414574E8820C14772 /* UIColor+MaterialDynamic.m */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				93DBA21C21588BE6E84470513B380213 /* Pods */,
-				8F29BDBE7BA724305F1CCB07A76720B9 /* Products */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				5C3F59B506A1ED7129FEA09C5CD71AC2 /* Pods */,
+				2E65AD599254482AEF63BA2C26D0FBAB /* Products */,
 				B92E6D509ADAACA98B859D02151FAFE7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F0A778C0229E9BF1FD97896B93F3272B /* iOS */ = {
+		D2C4198B64D492409A8390B127563495 /* Elevation */ = {
 			isa = PBXGroup;
 			children = (
-				4B1530FBFAA1690D27A135E4CC85AA07 /* Foundation.framework */,
-				9FE46B11FEBCBB7C689EB07A5E57BD38 /* QuartzCore.framework */,
-				8CE2AD31F00D0EF9C522211BDDBF6C3C /* UIKit.framework */,
+				C8AB3136045D06C92FCFBE1642E5B90A /* MaterialElevation.h */,
+				446B44AE917F1CAB836DB91E6C11F106 /* MDCElevatable.h */,
+				D1087154BC5A638BAE26A80BA1D0A9FE /* MDCElevationOverriding.h */,
+				C40DBE382728E876D1339AD381952030 /* UIColor+MaterialElevation.h */,
+				08E1AE3190BF4B83D70AD15B62BCF494 /* UIColor+MaterialElevation.m */,
+				2B5FD884C7FF4425DC596E2C35543552 /* UIView+MaterialElevationResponding.h */,
+				ACDE318B1835F087A472DE0080550102 /* UIView+MaterialElevationResponding.m */,
+			);
+			name = Elevation;
+			sourceTree = "<group>";
+		};
+		D3372E914CD4BB16C004BC6348342F01 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE0D81EC4B838007479CC04EC54D853C /* DropDown.modulemap */,
+				6EC39A1F0913B65BEFB9AC6AA46AC8AE /* DropDown-dummy.m */,
+				C6693D71DCF5483B1556C03A59DA7093 /* DropDown-Info.plist */,
+				79916A2EF1368DC286FADAA7A4F0FF0A /* DropDown-prefix.pch */,
+				D7B6AAB66683D04E1677CD0236F9A4A0 /* DropDown-umbrella.h */,
+				5DB3AD5F7F949D49A238A24FFC271EDA /* DropDown.debug.xcconfig */,
+				4784BEDEB646E920FD908013DB409C5A /* DropDown.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		DBACA908B436B1A8E5D407ED0E420B0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F2045A3A327540D9B4A5ADA250C3C86 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2BE6B45F3A03639826544E28601F9B3 /* KeyboardWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				9C967AF816119E0C238BB394C7D7A852 /* MaterialKeyboardWatcher.h */,
+				24361FF9BB916CADF119FED3DF5CFACF /* MDCKeyboardWatcher.h */,
+				A4752DA6480240753BE99486AEA41BCA /* MDCKeyboardWatcher.m */,
+			);
+			name = KeyboardWatcher;
+			sourceTree = "<group>";
+		};
+		E36F5643482E6B68CEDB5CEA825EF5CA /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				DA4FAA0743AF6922ADA89E4C558E82F5 /* MaterialShapes.h */,
+				7098B257C1ACDCEB3C34F9DC35D9C961 /* MDCCornerTreatment.h */,
+				16882C375ADD1184EDE12ED315BB908D /* MDCCornerTreatment.m */,
+				AD48F19793D6A335560302414A2864B5 /* MDCEdgeTreatment.h */,
+				6D9A2151F6C7994E7ACC2B3DE1783FAC /* MDCEdgeTreatment.m */,
+				6E19ECE25EE42F16ACD1361622FD9469 /* MDCPathGenerator.h */,
+				B143690B13931BA30C196DC75E344B63 /* MDCPathGenerator.m */,
+				F7F71A8C6C08AFF6B8D46D88F7E126F3 /* MDCRectangleShapeGenerator.h */,
+				921D32A0BE86B1D6FB33F512F8D486FE /* MDCRectangleShapeGenerator.m */,
+				F5C71C845401A909C1AE16F832F62AF3 /* MDCShapedShadowLayer.h */,
+				8F2FE3D20CEAACD9C6AE6F53F83563D5 /* MDCShapedShadowLayer.m */,
+				D152010DE396C89200F6CD9BAB1D9F4D /* MDCShapedView.h */,
+				A1717CA141A1188BEE98B57C7C6A0386 /* MDCShapedView.m */,
+				946B7FEBA2735ADF4245A401AEF5D6C7 /* MDCShapeGenerating.h */,
+				E5D6696F190CB908C5CB6536C69A3F33 /* MDCShapeMediator.h */,
+				F940385DFACA64E40574221D7D731413 /* MDCShapeMediator.m */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		E4FF81C57BD7F145A046F6589E1EE456 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6BC3518725ED0791502E99F93252E2EE /* Foundation.framework */,
+				5B1EAD62DA5D58CA4EF748D66011CD37 /* QuartzCore.framework */,
+				B6054C3F749D7A5852580E7C66A51F32 /* UIKit.framework */,
+				8B9CD176E991CC22FCE7D7D63BEF4540 /* WebKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2360CA6EF3CEEB55806C3D6FA0ED495 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1A933725754E66273648AA762A63B4B /* MaterialComponents.modulemap */,
+				12AD143DC144E3F5CB519B12D27C9D80 /* MaterialComponents-dummy.m */,
+				B6BC0F0C64456008D283AB155C73F038 /* MaterialComponents-Info.plist */,
+				A9D7A839810866B23C0D21C7D3F1DBC4 /* MaterialComponents-prefix.pch */,
+				3EE503946433570EFC7462B9EBF3057C /* MaterialComponents-umbrella.h */,
+				27C141B51D27B8E34B955A55DBEE7604 /* MaterialComponents.debug.xcconfig */,
+				EBB414C807036B74A60053C35CF7B84C /* MaterialComponents.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MaterialComponents";
+			sourceTree = "<group>";
+		};
+		FAB48CDB04CB112F846823D4083280F6 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				07CD1F63070E4DC59ED216DE32FB41E4 /* MaterialBottomSheet.h */,
+				BAE7F99958D09532D8B704A066A8976A /* MDCBottomSheetController.h */,
+				E7D2248CA7FDF22895AD0E0FEE5C0496 /* MDCBottomSheetController.m */,
+				04C9D39FBCFE8C24621735E6FA7A9146 /* MDCBottomSheetControllerDelegate.h */,
+				696C464AEA349FF48BB8E3FA681E4742 /* MDCBottomSheetPresentationController.h */,
+				DCD09DF6E4E304989B94E8F5FA7079B8 /* MDCBottomSheetPresentationController.m */,
+				07178D96C86D71270875CB740EBFEFFA /* MDCBottomSheetPresentationControllerDelegate.h */,
+				72A8F50DC619327DCB714C84AF4C4796 /* MDCBottomSheetTransitionController.h */,
+				6ABF866C2CC8DAA0CB8D90AEECA0613C /* MDCBottomSheetTransitionController.m */,
+				E85D754A1AFF7C9519A7B0B973C0EB33 /* MDCDraggableView.h */,
+				FA7F6BCD242D50B31A42C0BC7EC4C4E8 /* MDCDraggableView.m */,
+				0364C00D0090E3E0346E19D4B5F2CC7F /* MDCDraggableViewDelegate.h */,
+				DFA0B5DBBE2689571134F8D1F7113685 /* MDCSheetBehavior.h */,
+				3970E6F23A5259EC488C7832086D5E55 /* MDCSheetBehavior.m */,
+				04E2CF09B5BCB9CCE0F59BEB64F02776 /* MDCSheetContainerView.h */,
+				77E0516CF08A0E1FA39D708E934BAAE9 /* MDCSheetContainerView.m */,
+				C96B8826FE26724F50DCF846D1B413EC /* MDCSheetContainerViewDelegate.h */,
+				E900DE720B947AAF34B3DB04ECA62081 /* MDCSheetState.h */,
+				03812A7530098D0202E9589BFBE6A38B /* UIViewController+MaterialBottomSheet.h */,
+				396B6A9885C26B25982D8CEE54A33B75 /* UIViewController+MaterialBottomSheet.m */,
+			);
+			name = BottomSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2ABE22B140A12467AF889B70BED124D1 /* Headers */ = {
+		2962B82404AF24029CCD6A2725158B7D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A519332A6F30268B5FC593FBD0BA876 /* Pods-TermProjcet-umbrella.h in Headers */,
+				7BD813EB53FFD5E61D3E8D17FDEF5762 /* MaterialApplication.h in Headers */,
+				BAA19917A9D659B3AE6AC41D3D4870EE /* MaterialAvailability.h in Headers */,
+				23AD7797186955B046EA44B8636C1AC3 /* MaterialBottomSheet.h in Headers */,
+				0768B68EC675EBCCABB024A9FB318444 /* MaterialColor.h in Headers */,
+				958CEC0A17E65944F5C8A5500DE7FD00 /* MaterialComponents-umbrella.h in Headers */,
+				2B08C5A22A776EDEB74DB4B835A19B1D /* MaterialElevation.h in Headers */,
+				41EC1065752BAACEE3C4EDC8CABB900B /* MaterialKeyboardWatcher.h in Headers */,
+				ABEFEA99DE7320CC9D1D36002D45D83E /* MaterialMath.h in Headers */,
+				8607B06ECC453ABECA0C6F9E92395376 /* MaterialShadowElevations.h in Headers */,
+				9406299AFB3E995D047529C304D4A195 /* MaterialShadowLayer.h in Headers */,
+				D7DFC8407A67FE6F417824532A1351DA /* MaterialShapeLibrary.h in Headers */,
+				592002A7F1B30C9E5A6A2D3624E6642D /* MaterialShapes.h in Headers */,
+				25A90CB838F94F6308EA293F3047C42E /* MDCAvailability.h in Headers */,
+				2C0CEBFD92AF5FE06B0F5D47D68FB86B /* MDCBottomSheetController.h in Headers */,
+				A5951056C78026270D265B1A05FB77A0 /* MDCBottomSheetControllerDelegate.h in Headers */,
+				AB80344757F1BF9A274B8CEE167E3F30 /* MDCBottomSheetPresentationController.h in Headers */,
+				4EC8090B180710C479A3B21CD72FB213 /* MDCBottomSheetPresentationControllerDelegate.h in Headers */,
+				A1C152BD9F0F1606B6D90EAC1DF82700 /* MDCBottomSheetTransitionController.h in Headers */,
+				A27481E0C1947D76287FBB49CE42B06B /* MDCCornerTreatment+CornerTypeInitalizer.h in Headers */,
+				A8A9071E31DCB75622DA04C3ED40B98F /* MDCCornerTreatment.h in Headers */,
+				1A304FAEF5CF0C1E8622E908555FE490 /* MDCCurvedCornerTreatment.h in Headers */,
+				FB71B976745977B39DA0BC1B4766782A /* MDCCurvedRectShapeGenerator.h in Headers */,
+				B4F4CB89BD4FF9D22964FB5EFDD65C0F /* MDCCutCornerTreatment.h in Headers */,
+				BBF5E9A50B05DA9EA5A46F3838FA31AD /* MDCDraggableView.h in Headers */,
+				9359F19224DA2E55485BDC2CA57919BA /* MDCDraggableViewDelegate.h in Headers */,
+				E9D24B4691FEF6E79A0F60C321DEF39D /* MDCEdgeTreatment.h in Headers */,
+				62A95262A25CE34C27B3FD2B1969277C /* MDCElevatable.h in Headers */,
+				81F6B3871E03BF241CB40023C4442227 /* MDCElevationOverriding.h in Headers */,
+				79709A0F4E6BFCEF9D0E853CD6807959 /* MDCKeyboardWatcher.h in Headers */,
+				FC57BC309245609B0F44DFB1968D979D /* MDCMath.h in Headers */,
+				B382ED925D539434103D3DA8B1BEA917 /* MDCPathGenerator.h in Headers */,
+				AD6206FA289B4651BB747798FD46B7B8 /* MDCPillShapeGenerator.h in Headers */,
+				8226EF38F2234303BB738273DD72DF7A /* MDCRectangleShapeGenerator.h in Headers */,
+				51EBF4ED4DA88FCB58F2CAC291D1079A /* MDCRoundedCornerTreatment.h in Headers */,
+				FCBF6565CA4D10B61B1EBEAA81B4EE6B /* MDCShadowElevations.h in Headers */,
+				95D5BD0113DFC666346BDC9EE60E8D8D /* MDCShadowLayer.h in Headers */,
+				4958DBF1C53FFBB5924C6F3C91B9F7A9 /* MDCShapedShadowLayer.h in Headers */,
+				99E15058FFF8DDEFDE915CFCB913A34B /* MDCShapedView.h in Headers */,
+				19F431D12744F02779B1FCA82579DDD6 /* MDCShapeGenerating.h in Headers */,
+				9DC842FFE7C8DCB96E49F06BF7975DAE /* MDCShapeMediator.h in Headers */,
+				2A00198B4641725EC612125584590BA5 /* MDCSheetBehavior.h in Headers */,
+				83E77B4563193B5EF5BCD5BA674DC997 /* MDCSheetContainerView.h in Headers */,
+				C8B94A2D7B8639EAE6A57753CB5DB17B /* MDCSheetContainerViewDelegate.h in Headers */,
+				3873F4D2DBAA04C02ADADDDE71898F31 /* MDCSheetState.h in Headers */,
+				B5865268D0C8941A7FD48A91ECE400D6 /* MDCSlantedRectShapeGenerator.h in Headers */,
+				9EBA3162E0BFA77C454865EF907619DA /* MDCTriangleEdgeTreatment.h in Headers */,
+				34D352F0915CF9F8500B1D5A94AF36C6 /* UIApplication+MDCAppExtensions.h in Headers */,
+				647C3DF4DD99EF544435173281FF6E92 /* UIColor+MaterialBlending.h in Headers */,
+				1B304B7C5104F9421117AFEB21453F67 /* UIColor+MaterialDynamic.h in Headers */,
+				BAB06A62079EBC50FC3883D96ABFE581 /* UIColor+MaterialElevation.h in Headers */,
+				4A76ABED65F7F6BAC8338E6A602C1AB3 /* UIView+MaterialElevationResponding.h in Headers */,
+				6BC96BCB3EF130F53BB9A78D7E2EFB9E /* UIViewController+MaterialBottomSheet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +902,14 @@
 			files = (
 				45984E7480A4DB592B40F0DA0DAE7514 /* Gifu-umbrella.h in Headers */,
 				E8583EF4F023B694EA051DD60BF2BAFA /* Gifu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87606ADF2BFE6D588C7F8CA042B40807 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57ACA7BC0C44660A1D979AC4D42EC92 /* Pods-TermProjcet-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,19 +960,20 @@
 		};
 		4420E121072F2C7E3B810381AB4B1122 /* Pods-TermProjcet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9992C94047964432C2DEA96257926AA1 /* Build configuration list for PBXNativeTarget "Pods-TermProjcet" */;
+			buildConfigurationList = C5D070AD31110E7BBE3E57D94C235869 /* Build configuration list for PBXNativeTarget "Pods-TermProjcet" */;
 			buildPhases = (
-				2ABE22B140A12467AF889B70BED124D1 /* Headers */,
-				08FEE9E05CB5D598CDCACE0B5E81B555 /* Sources */,
-				7F4B3720CDF2AD93241E198E3AB64F25 /* Frameworks */,
-				5C160DBA2A11733693B8F268827B4E58 /* Resources */,
+				87606ADF2BFE6D588C7F8CA042B40807 /* Headers */,
+				9A60C671FCF770DB55A83008DD1763E3 /* Sources */,
+				C5372EDDE85385B527A1DD10B9F8A49F /* Frameworks */,
+				7B9788BABD58D7A74E73D4273F45C274 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5F20A0FAC3176CECA05EE59A6CBB7D2B /* PBXTargetDependency */,
-				36E4923B5160BD02CCBE60CECA46ACB6 /* PBXTargetDependency */,
-				9DF2C51A7873DC670A7BB81CF6E7C1C5 /* PBXTargetDependency */,
+				EF55A48B37E8A86A7620051CA3EF9B00 /* PBXTargetDependency */,
+				39FD4A08DE1C9CF9670379CA6E897811 /* PBXTargetDependency */,
+				281A941F0EEDF2375763FE0A1780E4FE /* PBXTargetDependency */,
+				A5EB468D1D15E22AD790EBD3B2F89E1A /* PBXTargetDependency */,
 			);
 			name = "Pods-TermProjcet";
 			productName = "Pods-TermProjcet";
@@ -538,6 +996,24 @@
 			name = Gifu;
 			productName = Gifu;
 			productReference = 40E5F8D9277E714962AFA02550F15F8A /* Gifu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C613962BF90A2E997E366FBBF280FBDC /* Build configuration list for PBXNativeTarget "MaterialComponents" */;
+			buildPhases = (
+				2962B82404AF24029CCD6A2725158B7D /* Headers */,
+				B7044B7EDB3CB1DEF12DE3B83560473D /* Sources */,
+				BED3178971CB04BB3492FDF570011C51 /* Frameworks */,
+				D4EA9371EBDEB67DEF5E9F9163A868DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaterialComponents;
+			productName = MaterialComponents;
+			productReference = A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
@@ -576,13 +1052,14 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8F29BDBE7BA724305F1CCB07A76720B9 /* Products */;
+			productRefGroup = 2E65AD599254482AEF63BA2C26D0FBAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */,
 				830B5AB9E16163B4A1BA339D625FE46C /* Gifu */,
+				B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */,
 				4420E121072F2C7E3B810381AB4B1122 /* Pods-TermProjcet */,
 			);
 		};
@@ -596,7 +1073,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C160DBA2A11733693B8F268827B4E58 /* Resources */ = {
+		7B9788BABD58D7A74E73D4273F45C274 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -608,6 +1085,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3D83C05EC7793D23A1192C11B9F631 /* DropDownCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EA9371EBDEB67DEF5E9F9163A868DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,14 +1123,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08FEE9E05CB5D598CDCACE0B5E81B555 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A54971B22A9DA884B2D15C79E65CB6D /* Pods-TermProjcet-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7CA9E2A18C014A20CD8A14FD9AFD84EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -670,6 +1146,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A60C671FCF770DB55A83008DD1763E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B276753B1C2BEC3D0C04F3EAFAFB2319 /* Pods-TermProjcet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7044B7EDB3CB1DEF12DE3B83560473D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889FD7B6C2C8CD0E91C35B43074B0752 /* MaterialComponents-dummy.m in Sources */,
+				A67FEE8FD423E6C4A8EDA4F5DF3A9A80 /* MaterialMathDummy.m in Sources */,
+				B63C7F92C82593FA45FE0B2D94E188B4 /* MaterialShadowElevationsDummy.m in Sources */,
+				015511D4ACD183CB78F8F0F79FCF3F01 /* MDCBottomSheetController.m in Sources */,
+				87E4A53B714A12498CE600B77686C8A8 /* MDCBottomSheetPresentationController.m in Sources */,
+				F5C699B3399E7BF36A74BB4C56A46FD4 /* MDCBottomSheetTransitionController.m in Sources */,
+				E593E1AFC525348B0FA77DFE813F2350 /* MDCCornerTreatment+CornerTypeInitalizer.m in Sources */,
+				FE8C606CC7BB9361045058A446FCAA0A /* MDCCornerTreatment.m in Sources */,
+				E06FD07F020F4CD17109D4EFA1EDD6CE /* MDCCurvedCornerTreatment.m in Sources */,
+				357A8A169BB53A5F85A3B2EA04A54F0F /* MDCCurvedRectShapeGenerator.m in Sources */,
+				888032AC899C87D4E12B1993502699F2 /* MDCCutCornerTreatment.m in Sources */,
+				045B17ADCA714417CCF0DCC9D9096D24 /* MDCDraggableView.m in Sources */,
+				8DC48F8F5F7B03BDF176AFD6A6C286CD /* MDCEdgeTreatment.m in Sources */,
+				7F98776A7962572395F923703553ABAA /* MDCKeyboardWatcher.m in Sources */,
+				D46AD0CE508E5D8A5FC7F184DBBB1EAE /* MDCPathGenerator.m in Sources */,
+				7D3E486DB6C65975B839986EBFD38318 /* MDCPillShapeGenerator.m in Sources */,
+				3FF765F75F1270082F2EE95FDA9EF8BA /* MDCRectangleShapeGenerator.m in Sources */,
+				3F035D81FAF81A41E9E58238265A0051 /* MDCRoundedCornerTreatment.m in Sources */,
+				528D55FC297AD93F1463CAC1B0CCD1CD /* MDCShadowLayer.m in Sources */,
+				EBF5AB7255E72DB80DF0BA04CED4C295 /* MDCShapedShadowLayer.m in Sources */,
+				84B037D3215B9BD0863CAE3BB692CAE2 /* MDCShapedView.m in Sources */,
+				F5D92BD96561735261424D962B1582BF /* MDCShapeMediator.m in Sources */,
+				2E2BD5BB87E4AC41401353835E7F7914 /* MDCSheetBehavior.m in Sources */,
+				46495406605D108F4CD12BDE5A4B6AF2 /* MDCSheetContainerView.m in Sources */,
+				1A6CEDB0E42E0DEA22512AE2D91707C8 /* MDCSlantedRectShapeGenerator.m in Sources */,
+				066439D717AE4BC003363486E27C707A /* MDCTriangleEdgeTreatment.m in Sources */,
+				CA73DDDB149041B138811BE98924C594 /* UIApplication+MDCAppExtensions.m in Sources */,
+				68D1C976F2E0B7ACB1000C5FB3ADA5E1 /* UIColor+MaterialBlending.m in Sources */,
+				6F3E35952D17589EA939B24A4798FDF0 /* UIColor+MaterialDynamic.m in Sources */,
+				D2DA847A5AFB71B24633A81F490B05EC /* UIColor+MaterialElevation.m in Sources */,
+				ED5B7134348145D025C2B7AEC4A896ED /* UIView+MaterialElevationResponding.m in Sources */,
+				A8F0EC87E16102BC801E1429E3A259AA /* UIViewController+MaterialBottomSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAFA782452D3B598A37FB459CD314120 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,28 +1210,107 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		36E4923B5160BD02CCBE60CECA46ACB6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FSCalendar;
-			target = 13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */;
-			targetProxy = C4C78F414006C1E8EFB47AAFFF9F590C /* PBXContainerItemProxy */;
-		};
-		5F20A0FAC3176CECA05EE59A6CBB7D2B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DropDown;
-			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = A72AD3CD1E450178146C2D5ED8946317 /* PBXContainerItemProxy */;
-		};
-		9DF2C51A7873DC670A7BB81CF6E7C1C5 /* PBXTargetDependency */ = {
+		281A941F0EEDF2375763FE0A1780E4FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Gifu;
 			target = 830B5AB9E16163B4A1BA339D625FE46C /* Gifu */;
-			targetProxy = E27B0BC0E1D544A263E6303318461135 /* PBXContainerItemProxy */;
+			targetProxy = 38D46FA88B03B5CCF8F3C3D639AD4804 /* PBXContainerItemProxy */;
+		};
+		39FD4A08DE1C9CF9670379CA6E897811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			target = 13285D54682BEAD805960F9E6EEB9949 /* FSCalendar */;
+			targetProxy = 4D127E20521A7E6429D0D4991240E100 /* PBXContainerItemProxy */;
+		};
+		A5EB468D1D15E22AD790EBD3B2F89E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MaterialComponents;
+			target = B4723B5744013DF08BE3A5FEAA286944 /* MaterialComponents */;
+			targetProxy = 6E6148094E48D222C2EE62A90CDA7F3B /* PBXContainerItemProxy */;
+		};
+		EF55A48B37E8A86A7620051CA3EF9B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DropDown;
+			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
+			targetProxy = B2F97F79A4B9BF80B371ACF8B033F5B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2BCB3B81BA5A4B8C23CA76436A59EF36 /* Debug */ = {
+		198AF6B2FBB05C478EC56744D0D84472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7D43CDF2738C9A6FA56AA4E83CFEA2 /* Pods-TermProjcet.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DE1FA53F21B86FD8F9A5864089ED240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C141B51D27B8E34B955A55DBEE7604 /* MaterialComponents.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				PRODUCT_MODULE_NAME = MaterialComponents;
+				PRODUCT_NAME = MaterialComponents;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F2EF19110247340EBF12B9EFD71DE97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9DF7D3CEFA2894D4501D23416EE7EF00 /* Pods-TermProjcet.debug.xcconfig */;
 			buildSettings = {
@@ -747,7 +1349,7 @@
 		};
 		4A17D27FFBCE427192C281661D3F5767 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF20097B8EB149D9011790B2DC030D56 /* DropDown.debug.xcconfig */;
+			baseConfigurationReference = 5DB3AD5F7F949D49A238A24FFC271EDA /* DropDown.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -909,7 +1511,7 @@
 		};
 		8B28DAA7DDFFF9A20AD710664AC96ADD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAFBCF47D1C937344D91AF890FCC8A75 /* DropDown.release.xcconfig */;
+			baseConfigurationReference = 4784BEDEB646E920FD908013DB409C5A /* DropDown.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -942,11 +1544,10 @@
 			};
 			name = Release;
 		};
-		C0BD214E0D8F62211653C248975DBCB6 /* Release */ = {
+		9FF8B44D14C428113C858E43C2970EDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F7D43CDF2738C9A6FA56AA4E83CFEA2 /* Pods-TermProjcet.release.xcconfig */;
+			baseConfigurationReference = EBB414C807036B74A60053C35CF7B84C /* MaterialComponents.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -956,23 +1557,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MaterialComponents/MaterialComponents-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MaterialComponents/MaterialComponents-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/MaterialComponents/MaterialComponents.modulemap";
+				PRODUCT_MODULE_NAME = MaterialComponents;
+				PRODUCT_NAME = MaterialComponents;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -982,7 +1582,7 @@
 		};
 		C9D8A777643BBEC6139AA8A963349D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88F69C0DBDD37EB99B4CC813989B683F /* FSCalendar.debug.xcconfig */;
+			baseConfigurationReference = 23BFB28D2491AC2C9EFEFE6684B9C30E /* FSCalendar.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1016,7 +1616,7 @@
 		};
 		C9FE9FE12E4D706F3987DC0AFBD314FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B07CC5A43C15D3BAAFA8F4F487316109 /* FSCalendar.release.xcconfig */;
+			baseConfigurationReference = 6ACFDBB0CFCBBE8DB2A70844011782F1 /* FSCalendar.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1051,7 +1651,7 @@
 		};
 		DDA145A73C39DFCFE4523C0ADC738938 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FDEA34E51A5D6CF94414D0C8FD6E9A1 /* Gifu.release.xcconfig */;
+			baseConfigurationReference = 91ACBCC0D5BF801C1C8226562DA968F0 /* Gifu.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1086,7 +1686,7 @@
 		};
 		E880EECC3218C35D488DFB71C9A9562B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D34CB59E30C3EB0F671AD0FA70C9224 /* Gifu.debug.xcconfig */;
+			baseConfigurationReference = E80186FFD8F3C1418A0FB8894920DDDE /* Gifu.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1148,11 +1748,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9992C94047964432C2DEA96257926AA1 /* Build configuration list for PBXNativeTarget "Pods-TermProjcet" */ = {
+		C5D070AD31110E7BBE3E57D94C235869 /* Build configuration list for PBXNativeTarget "Pods-TermProjcet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BCB3B81BA5A4B8C23CA76436A59EF36 /* Debug */,
-				C0BD214E0D8F62211653C248975DBCB6 /* Release */,
+				3F2EF19110247340EBF12B9EFD71DE97 /* Debug */,
+				198AF6B2FBB05C478EC56744D0D84472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C613962BF90A2E997E366FBBF280FBDC /* Build configuration list for PBXNativeTarget "MaterialComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE1FA53F21B86FD8F9A5864089ED240 /* Debug */,
+				9FF8B44D14C428113C858E43C2970EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -12,19 +12,10 @@ import DropDown
 
 class ViewController: UIViewController {
 
+    var edu = ""
+    var code = ""
     @IBOutlet weak var calendarView: FSCalendar!
-    @IBOutlet weak var HelloImage: GIFImageView!
-    @IBOutlet weak var selectEdu: UIButton!
     let dateFormatter = DateFormatter()
-    let dropDown = DropDown()
-    
-    @IBAction func SelectItem(_ sender: Any) {
-        dropDown.show()
-        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
-            selectEdu.setTitle(item, for: .normal)
-            self.dropDown.clearSelection()
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +25,7 @@ class ViewController: UIViewController {
         calendarView.scrollDirection = .vertical // 수직으로 스크롤
         calendarView.delegate = self
         calendarView.dataSource = self
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        HelloImage.animate(withGIFNamed: "hello")
-        
-        dropDown.dataSource = ["서울특별시교육청","부산광역시교육청", "대구광역시교육청", "인천광역시교육청", "광주광역시교육청", "대전광역시교육청", "울산광역시교육청", "세종특별자치시교육청", "경기도교육청", "강원도교육청", "충청북도교육청", "충청남도교육청", "전라북도교육청", "전라남도교육청", "경상북도교육청", "경상남도교육청", "제주특별자치도교육청" ]
-        dropDown.anchorView = selectEdu
-        dropDown.bottomOffset = CGPoint(x: 0, y: (dropDown.anchorView?.plainView.bounds.height)!)
+        dateFormatter.dateFormat = "yyyyMMdd"
     }
 
 
@@ -60,6 +46,8 @@ extension ViewController : FSCalendarDelegate, FSCalendarDataSource, FSCalendarD
         
         //InfoView.dateLabel.text = dateFormatter.string(from: date)
         InfoView.date = dateFormatter.string(from: date)
+        InfoView.edu = edu
+        InfoView.code = code
         self.present(InfoView, animated: true, completion: nil)
         
     }

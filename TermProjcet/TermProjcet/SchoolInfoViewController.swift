@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import MaterialComponents.MaterialBottomSheet
 
 class SchoolInfoViewController: UIViewController, XMLParserDelegate, MKMapViewDelegate {
 
@@ -21,13 +22,41 @@ class SchoolInfoViewController: UIViewController, XMLParserDelegate, MKMapViewDe
     var XPos = NSMutableString()
     var YPos = NSMutableString()
     
-    var schoolData = CSchool(edu: "", code: "", title: "", engTitle: "", level: "", locationName: "", pbpr: "", addr: "", tel: "", site: "", jender: "", fax: "", kind: "", estdate: "", holiday: "")
+    var schoolData = CSchool(edu: "", code: "", title: "", engTitle: "", level: "", locationName: "", pbpr: "", addr: "", tel: "", site: "", jender: "", fax: "", kind: "", estdate: "", holiday: "", educode: "")
     var url = ""
     
     let regionRadius: CLLocationDistance = 500
     var schoolinfo : [CSchoolMap] = []
     @IBOutlet weak var sNameText: UILabel!
+    @IBOutlet weak var sEduText: UILabel!
+    @IBOutlet weak var sPbprText: UILabel!
+    @IBOutlet weak var sAddrText: UILabel!
+    @IBOutlet weak var sTelText: UILabel!
+    @IBOutlet weak var sSiteText: UILabel!
+    @IBOutlet weak var sJenderText: UILabel!
+    @IBOutlet weak var sFaxText: UILabel!
+    @IBOutlet weak var sKindText: UILabel!
+    @IBOutlet weak var sEstdateText: UILabel!
+    @IBOutlet weak var sHolidayText: UILabel!
+    
     @IBOutlet weak var mapView: MKMapView!
+
+    @IBOutlet weak var calendarButton: UIButton!
+    
+    @IBAction func openCalendar(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "CalendarViewController") as! ViewController
+        let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
+        vc.code = schoolData.code
+        vc.edu = schoolData.educode
+        present(bottomSheet, animated: true, completion: nil)
+    }
+    
+    func makeDate(str: String) -> String {
+        var str2 = str
+        str2.insert("-", at: str2.index(str2.startIndex, offsetBy: 4))
+        str2.insert("-", at: str2.index(str2.startIndex, offsetBy: 7))
+        return str2
+    }
     func loadInitialData(){
         for post in posts {
             let yadmNm = schoolData.title
@@ -74,6 +103,16 @@ class SchoolInfoViewController: UIViewController, XMLParserDelegate, MKMapViewDe
         // Do any additional setup after loading the view.
         beginParsing()
         sNameText.text = schoolData.title as String
+        sEduText.text = schoolData.edu as String
+        sPbprText.text = schoolData.pbpr as String
+        sAddrText.text = schoolData.addr as String
+        sTelText.text = schoolData.tel as String
+        sSiteText.text = schoolData.site as String
+        sJenderText.text = schoolData.jender as String
+        sFaxText.text = schoolData.fax as String
+        sKindText.text = schoolData.kind as String
+        sEstdateText.text = makeDate(str: schoolData.estdate as String)
+        sHolidayText.text = makeDate(str: schoolData.holiday as String)
         
         var lat = 0.0
         var lon = 0.0
@@ -136,6 +175,15 @@ class SchoolInfoViewController: UIViewController, XMLParserDelegate, MKMapViewDe
             posts.add(elements)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToSchoolWebView" {
+            if let schoolwebView = segue.destination as? SchoolWebViewController {
+                schoolwebView.urltext = schoolData.site
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
