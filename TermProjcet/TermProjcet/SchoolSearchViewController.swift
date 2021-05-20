@@ -67,6 +67,7 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
     }
     
     @IBAction func schoolSearch(_ sender: Any) {
+        schoolTableView.isHidden = false
         beginParsing()
     }
     
@@ -74,6 +75,8 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //schoolTableView.isHidden = true
+        
         eduButton.layer.borderWidth = 2
         eduButton.layer.borderColor = UIColor.black.cgColor
         eduButton.layer.cornerRadius = 10
@@ -81,7 +84,6 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
         schoollevelButton.layer.borderWidth = 2
         schoollevelButton.layer.borderColor = UIColor.black.cgColor
         schoollevelButton.layer.cornerRadius = 10
-        //schoolTableView.isHidden = true
         
         edudropDown.dataSource = ["서울특별시교육청","부산광역시교육청", "대구광역시교육청", "인천광역시교육청", "광주광역시교육청", "대전광역시교육청", "울산광역시교육청", "세종특별자치시교육청", "경기도교육청", "강원도교육청", "충청북도교육청", "충청남도교육청", "전라북도교육청", "전라남도교육청", "경상북도교육청", "경상남도교육청", "제주특별자치도교육청" ]
         edudropDown.anchorView = eduButton
@@ -90,7 +92,6 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
         leveldropDown.dataSource = ["전체", "고등학교","중학교", "초등학교", "특수학교" ]
         leveldropDown.anchorView = schoollevelButton
         leveldropDown.bottomOffset = CGPoint(x: 0, y: (leveldropDown.anchorView?.plainView.bounds.height)!)
-        
     }
     
     func beginParsing()
@@ -272,7 +273,7 @@ class SchoolSearchViewController: UIViewController, XMLParserDelegate, UITableVi
         cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "ORG_RDNMA") as! NSString as String
         return cell
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToSchoolInfo" {
             if let sgCell = sender as? UITableViewCell {

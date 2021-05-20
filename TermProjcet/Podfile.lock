@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - DropDown (2.3.13)
   - FSCalendar (2.8.2)
   - Gifu (3.3)
@@ -31,26 +34,33 @@ PODS:
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
+  - YouTubePlayer (0.7.2)
 
 DEPENDENCIES:
+  - Charts
   - DropDown
   - FSCalendar
   - Gifu
   - MaterialComponents/BottomSheet
+  - YouTubePlayer
 
 SPEC REPOS:
   trunk:
+    - Charts
     - DropDown
     - FSCalendar
     - Gifu
     - MaterialComponents
+    - YouTubePlayer
 
 SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   Gifu: 97c2a3c3865fbc834ab13f797e2e8e7729a1853c
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
 
-PODFILE CHECKSUM: 7062715dacf98bb27465a34ab3c881b529cf3df6
+PODFILE CHECKSUM: 26c4ee12bc325f2f21496eb3c0cfea24c92e08a1
 
 COCOAPODS: 1.10.1

@@ -1,5 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-TermProjcet/Pods-TermProjcet-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
 ${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
 ${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
 ${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework
 ${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework
+${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework

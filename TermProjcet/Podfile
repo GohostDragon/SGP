@@ -11,5 +11,7 @@ target 'TermProjcet' do
   pod 'DropDown'
   pod 'Gifu'
   pod 'MaterialComponents/BottomSheet' 
+  pod 'Charts'
+  pod 'YouTubePlayer'
 
 end
