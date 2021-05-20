@@ -13,15 +13,20 @@ class FavoriteInfoViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var favTableVIew: UITableView!
     
     @IBOutlet weak var barChartView: BarChartView!
-    
-    var months: [String]!
-    var unitsSold: [Double]!
+
+    var months: [String] = []
+    var unitsSold: [Double] = []
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-        unitsSold = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+        
+        for i in Favorite.SharedInstance().favlist
+        {
+            let tmptitle = String(i.title.filter{!" \n\t\r".contains($0)})
+            months.append(tmptitle)
+            let tmptotal = String(i.acatotal.filter{!" \n\t\r".contains($0)})
+            unitsSold.append(NumberFormatter().number(from: tmptotal)!.doubleValue)
+        }
                
         barChartView.noDataText = "데이터가 없습니다."
         barChartView.noDataFont = .systemFont(ofSize: 20)
@@ -53,7 +58,7 @@ class FavoriteInfoViewController: UIViewController, UITableViewDataSource {
             dataEntries.append(dataEntry)
         }
         
-        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "판매량")
+        let chartDataSet = BarChartDataSet(entries: dataEntries, label: "정원수")
         
         // 차트 컬러
         chartDataSet.colors = [.systemBlue]
