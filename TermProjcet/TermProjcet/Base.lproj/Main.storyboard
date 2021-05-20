@@ -290,6 +290,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZp-8s-QML">
+                                <rect key="frame" x="305" y="684" width="81" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="favorite_icon.png"/>
+                                <connections>
+                                    <action selector="favAddDelete:" destination="WCb-Ac-3wB" eventType="touchUpInside" id="hKx-ON-TAC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d6h-hP-BL7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -302,6 +310,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="favButton" destination="WZp-8s-QML" id="zBg-tL-3Ki"/>
                         <outlet property="mapView" destination="pCf-eQ-6bz" id="ORZ-r3-NP7"/>
                         <outlet property="sAddrText" destination="Pf6-ta-re3" id="Ls7-Gb-o2S"/>
                         <outlet property="sEduText" destination="6AX-yj-fOc" id="mP3-8N-VUW"/>
@@ -319,7 +328,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fU3-hc-MEe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1e8-oH-DJl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2438" y="48"/>
+            <point key="canvasLocation" x="2437.68115942029" y="47.544642857142854"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -688,18 +697,61 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5sZ-Pv-EeK">
+                                <rect key="frame" x="20" y="113" width="374" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavCell" textLabel="F4J-ZV-10g" detailTextLabel="4c0-2s-fwC" rowHeight="80" style="IBUITableViewCellStyleSubtitle" id="AIK-rd-Hd8">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AIK-rd-Hd8" id="c3y-54-E8w">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F4J-ZV-10g">
+                                                    <rect key="frame" x="20" y="20" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4c0-2s-fwC">
+                                                    <rect key="frame" x="20" y="43.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VRw-mw-4Jd" id="4lw-F2-GXl"/>
+                                    <outlet property="delegate" destination="VRw-mw-4Jd" id="uc8-V2-n4s"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1b3-dk-sbg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2t0-6x-1gF"/>
+                    <navigationItem key="navigationItem" id="2t0-6x-1gF">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="iG3-5u-pmm">
+                            <connections>
+                                <segue destination="6Bz-9R-cc4" kind="unwind" unwindAction="doneToAcademySearchViewControllerWithSegue:" id="adl-tM-Te5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="barChartView" destination="7QZ-ho-GPT" id="Ky5-DU-ooh"/>
+                        <outlet property="favTableVIew" destination="5sZ-Pv-EeK" id="1Vr-Kw-iya"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oOH-f8-hWY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6Bz-9R-cc4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3349" y="986"/>
+            <point key="canvasLocation" x="3347.826086956522" y="985.71428571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZI0-WV-fIN">
@@ -910,6 +962,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="favorite_icon.png" width="512" height="512"/>
         <image name="logobg.gif" width="800" height="600"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="meal.png" width="200" height="200"/>

@@ -19,11 +19,27 @@ class Favorite{
     }
     
     func delFav(academy: CAcademy) {
-        let findex = favlist.firstIndex(of: academy)
-        favlist.remove(at: findex!)
+        
+        for i in favlist {
+            if i.code == academy.code {
+                let findex = favlist.firstIndex(of: i)
+                favlist.remove(at: findex!)
+            }
+        }
     }
     
     func isContain(academy: CAcademy) -> Bool {
-        return favlist.contains(academy)
+        
+        for i in favlist {
+            if i.code == academy.code {
+                return true
+            }
+        }
+        return false
     }
+    
+    /*
+    func isContain(academy: CAcademy) -> Bool {
+        return favlist.contains(academy)
+    }*/
 }

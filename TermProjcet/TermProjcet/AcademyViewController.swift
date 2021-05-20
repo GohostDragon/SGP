@@ -39,7 +39,25 @@ class AcademyInfoViewController: UIViewController, XMLParserDelegate, MKMapViewD
     @IBOutlet weak var sEstdateText: UILabel!
     @IBOutlet weak var sHolidayText: UILabel!
     
+    
+    @IBOutlet weak var favButton: UIButton!
+    
     @IBOutlet weak var mapView: MKMapView!
+    
+    
+    @IBAction func favAddDelete(_ sender: Any) {
+        if(Favorite.SharedInstance().isContain(academy: academyData)){
+            Favorite.SharedInstance().delFav(academy: academyData)
+            
+            let image = UIImage(named: "favorite_icon")
+            favButton.setImage(image, for: .normal)
+        } else {
+            Favorite.SharedInstance().addFav(academy: academyData)
+            
+            let image = UIImage(named: "favorite_icon2")
+            favButton.setImage(image, for: .normal)
+        }
+    }
     
     func makeDate(str: String) -> String {
         var str2 = str
@@ -92,6 +110,15 @@ class AcademyInfoViewController: UIViewController, XMLParserDelegate, MKMapViewD
 
         // Do any additional setup after loading the view.
         beginParsing()
+        
+        if(Favorite.SharedInstance().isContain(academy: academyData)){
+            let image = UIImage(named: "favorite_icon2")
+            favButton.setImage(image, for: .normal)
+        } else {
+            let image = UIImage(named: "favorite_icon")
+            favButton.setImage(image, for: .normal)
+        }
+        
         sNameText.text = academyData.title as String
         sEduText.text = academyData.edu as String
         sPbprText.text = academyData.acatotal as String
