@@ -28,10 +28,30 @@ class Favorite{
         }
     }
     
+    func delFavCode(code: String) {
+        
+        for i in favlist {
+            if i.code == code {
+                let findex = favlist.firstIndex(of: i)
+                favlist.remove(at: findex!)
+            }
+        }
+    }
+    
     func isContain(academy: CAcademy) -> Bool {
         
         for i in favlist {
             if i.code == academy.code {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func isContainCode(code: String) -> Bool {
+        
+        for i in favlist {
+            if i.code == code {
                 return true
             }
         }

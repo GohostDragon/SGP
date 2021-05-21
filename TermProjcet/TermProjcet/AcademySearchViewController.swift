@@ -9,7 +9,7 @@ import UIKit
 import Gifu
 import DropDown
 
-class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableViewDataSource {
+class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var eduButton: UIButton!
     @IBOutlet weak var schoollevelButton: UIButton!
@@ -73,7 +73,7 @@ class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableV
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        schoolTableView.isHidden = true
+        //schoolTableView.isHidden = true
         
         eduButton.layer.borderWidth = 2
         eduButton.layer.borderColor = UIColor.black.cgColor
@@ -91,6 +91,9 @@ class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableV
         leveldropDown.dataSource = ["전체", "고등학교","중학교", "초등학교", "특수학교" ]
         leveldropDown.anchorView = schoollevelButton
         leveldropDown.bottomOffset = CGPoint(x: 0, y: (leveldropDown.anchorView?.plainView.bounds.height)!)
+        
+        schoolTableView.delegate = self
+        schoolTableView.dataSource = self
     }
     
     func beginParsing()
@@ -257,6 +260,44 @@ class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableV
         return cell
     }
 
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let tcode = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "ACA_ASNUM") as! NSString as String
+        
+        let actions1 = UIContextualAction(style: .normal, title: "1") { [self] (UIContextualAction, UIView, success: @escaping (Bool) -> Void) in
+            if(Favorite.SharedInstance().isContainCode(code: tcode)) {
+                Favorite.SharedInstance().delFavCode(code: tcode)
+            } else {
+                let actitle = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "ACA_NM") as! NSString as String
+                let aclocationName = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "ADMST_ZONE_NM") as! NSString as String
+                let acedu = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "ATPT_OFCDC_SC_NM") as! NSString as String
+                let accode = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "ACA_ASNUM") as! NSString as String
+                let acengTitle = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "ACA_INSTI_SC_NM") as! NSString as String
+                let actotal = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "TOFOR_SMTOT") as! NSString as String
+                let acstate = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "REG_STTUS_NM") as! NSString as String
+                let acaddr = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "FA_RDNMA") as! NSString as String
+                let acsubjectkind = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "LE_ORD_NM") as! NSString as String
+                let acsubjectlist = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "LE_CRSE_LIST_NM") as! NSString as String
+                let acsubject = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "LE_CRSE_NM") as! NSString as String
+                let acfare = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "PSNBY_THCC_CNTNT") as! NSString as String
+                let ackind = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "REALM_SC_NM") as! NSString as String
+                let acestdate = (posts.object(at: (indexPath.row)) as AnyObject).value(forKey: "ESTBL_YMD") as! NSString as String
+                
+                let academyData = CAcademy(edu: acedu, code: accode, title: actitle, engTitle: acengTitle, acatotal: actotal, locationName: aclocationName, state: acstate, addr: acaddr, subjectkind: acsubjectkind, subjectlist: acsubjectlist, subject: acsubject, fare: acfare, kind: ackind, estdate: acestdate)
+                Favorite.SharedInstance().addFav(academy: academyData)
+            }
+            success(true)
+        }
+        
+        if(Favorite.SharedInstance().isContainCode(code: tcode)) {
+            actions1.image = UIImage(named: "favorite_icon2")
+        } else {
+            actions1.image = UIImage(named: "favorite_icon")
+        }
+        
+        return UISwipeActionsConfiguration(actions: [actions1])
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToAcademyInfo" {
             if let rvc = segue.destination as? AcademyInfoViewController {

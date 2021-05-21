@@ -49,6 +49,29 @@ class FavoriteInfoViewController: UIViewController, UITableViewDataSource {
         return cell
     }
         
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+           
+        if editingStyle == .delete {
+            Favorite.SharedInstance().delFavCode(code: Favorite.SharedInstance().favlist[indexPath.row].code)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            months.removeAll()
+            unitsSold.removeAll()
+            for i in Favorite.SharedInstance().favlist
+            {
+                let tmptitle = String(i.title.filter{!" \n\t\r".contains($0)})
+                months.append(tmptitle)
+                let tmptotal = String(i.acatotal.filter{!" \n\t\r".contains($0)})
+                unitsSold.append(NumberFormatter().number(from: tmptotal)!.doubleValue)
+            }
+            
+            setChart(dataPoints: months, values: unitsSold)
+               
+        } else if editingStyle == .insert {
+               
+        }
+    }
+    
     func setChart(dataPoints: [String], values: [Double]) {
         
         // 데이터 생성
