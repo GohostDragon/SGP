@@ -27,17 +27,21 @@ class AcademyInfoViewController: UIViewController, XMLParserDelegate, MKMapViewD
     
     let regionRadius: CLLocationDistance = 500
     var schoolinfo : [CSchoolMap] = []
-    @IBOutlet weak var sNameText: UILabel!
-    @IBOutlet weak var sEduText: UILabel!
-    @IBOutlet weak var sPbprText: UILabel!
-    @IBOutlet weak var sAddrText: UILabel!
-    @IBOutlet weak var sTelText: UILabel!
-    @IBOutlet weak var sSiteText: UILabel!
-    @IBOutlet weak var sJenderText: UILabel!
-    @IBOutlet weak var sFaxText: UILabel!
-    @IBOutlet weak var sKindText: UILabel!
-    @IBOutlet weak var sEstdateText: UILabel!
-    @IBOutlet weak var sHolidayText: UILabel!
+    
+    @IBOutlet weak var aNameText: UILabel!
+    @IBOutlet weak var aEduText: UILabel!
+    @IBOutlet weak var aAcatotalText: UILabel!
+    @IBOutlet weak var aFareText: UILabel!
+    @IBOutlet weak var aSubjectlistText: UILabel!
+    @IBOutlet weak var aStateText: UILabel!
+    @IBOutlet weak var aSubjectkindText: UILabel!
+    @IBOutlet weak var aAddrText: UILabel!
+    @IBOutlet weak var aKindText: UILabel!
+    @IBOutlet weak var aEstdateText: UILabel!
+    
+    
+    
+    
     
     
     @IBOutlet weak var favButton: UIButton!
@@ -119,16 +123,17 @@ class AcademyInfoViewController: UIViewController, XMLParserDelegate, MKMapViewD
             favButton.setImage(image, for: .normal)
         }
         
-        sNameText.text = academyData.title as String
-        sEduText.text = academyData.edu as String
-        sPbprText.text = academyData.acatotal as String
-        sAddrText.text = academyData.addr as String
-        sTelText.text = academyData.fare as String
-        sSiteText.text = academyData.subjectlist as String
-        sJenderText.text = academyData.state as String
-        sFaxText.text = academyData.subjectkind as String
-        sKindText.text = academyData.kind as String
-        sEstdateText.text = makeDate(str: academyData.estdate as String)
+        aNameText.text = academyData.title as String
+        aEduText.text = academyData.edu as String
+        aAcatotalText.text = academyData.acatotal as String
+        aAddrText.text = academyData.addr as String
+        aFareText.text = academyData.fare as String
+        aSubjectlistText.text = academyData.subjectlist as String
+        aStateText.text = academyData.state as String
+        aSubjectkindText.text = academyData.subjectkind as String
+        aKindText.text = academyData.kind as String
+        aEstdateText.text = makeDate(str: academyData.estdate as String)
+        
         
         var lat = 0.0
         var lon = 0.0
