@@ -60,6 +60,9 @@ class AcademyInfoViewController: UIViewController, XMLParserDelegate, MKMapViewD
             
             let image = UIImage(named: "favorite_icon2")
             favButton.setImage(image, for: .normal)
+            let explore = StardustView(frame: CGRect(x: (favButton.imageView?.center.x)!, y: (favButton.imageView?.center.y)!, width: 10, height: 10))
+            favButton.imageView?.superview?.addSubview(explore)
+            favButton.imageView?.superview?.sendSubviewToBack(_: explore)
         }
     }
     

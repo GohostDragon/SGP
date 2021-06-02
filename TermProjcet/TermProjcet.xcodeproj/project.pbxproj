@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		53CAF12B065F1925729223C5 /* Pods_TermProjcet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF1270838BCB72C806F646 /* Pods_TermProjcet.framework */; };
 		A104C935265837F700912A79 /* world-click-512.png in Resources */ = {isa = PBXBuildFile; fileRef = A104C934265837F700912A79 /* world-click-512.png */; };
+		A109B7082667E46F00FA288E /* StarParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109B7072667E46F00FA288E /* StarParticle.swift */; };
+		A109B70B2667E57500FA288E /* icons8-star-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A109B70A2667E57500FA288E /* icons8-star-48.png */; };
 		A118A0C72646FA0F00778DCD /* SchoolInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */; };
 		A118A0CA264711A700778DCD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C9264711A600778DCD /* School.swift */; };
 		A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0CC2647146400778DCD /* SchoolMapData.swift */; };
@@ -39,6 +41,8 @@
 		091D9DFE51906EAC7C05B1CE /* Pods-TermProjcet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TermProjcet.release.xcconfig"; path = "Target Support Files/Pods-TermProjcet/Pods-TermProjcet.release.xcconfig"; sourceTree = "<group>"; };
 		5DFF1270838BCB72C806F646 /* Pods_TermProjcet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TermProjcet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A104C934265837F700912A79 /* world-click-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "world-click-512.png"; sourceTree = "<group>"; };
+		A109B7072667E46F00FA288E /* StarParticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarParticle.swift; sourceTree = "<group>"; };
+		A109B70A2667E57500FA288E /* icons8-star-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-star-48.png"; sourceTree = "<group>"; };
 		A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewController.swift; sourceTree = "<group>"; };
 		A118A0C9264711A600778DCD /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		A118A0CC2647146400778DCD /* SchoolMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMapData.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 		A1EC5C5226429212002B2639 /* TermProjcet */ = {
 			isa = PBXGroup;
 			children = (
+				A109B70A2667E57500FA288E /* icons8-star-48.png */,
 				A104C934265837F700912A79 /* world-click-512.png */,
 				A1EC29EE2656065A00B16448 /* favorite_icon.png */,
 				A1EC29EF2656065A00B16448 /* favorite_icon2.png */,
@@ -144,6 +149,7 @@
 				A1EC29E52655E32500B16448 /* FavoriteInfoViewController.swift */,
 				A1EC29E82655E9FC00B16448 /* AcademyViewController.swift */,
 				A1EC29EB2655F91000B16448 /* Academy.swift */,
+				A109B7072667E46F00FA288E /* StarParticle.swift */,
 			);
 			path = TermProjcet;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EC5C6026429213002B2639 /* LaunchScreen.storyboard in Resources */,
+				A109B70B2667E57500FA288E /* icons8-star-48.png in Resources */,
 				A1EC29F12656065A00B16448 /* favorite_icon2.png in Resources */,
 				A1E3A5E92643062D00A0F454 /* hello.gif in Resources */,
 				A1F37D532649115E001C343B /* notable.gif in Resources */,
@@ -280,6 +287,7 @@
 				A1EC29E92655E9FC00B16448 /* AcademyViewController.swift in Sources */,
 				A13686E22647FECB009DC3C2 /* SchoolWebViewController.swift in Sources */,
 				A138821F2653A6F300038DAE /* Favorite.swift in Sources */,
+				A109B7082667E46F00FA288E /* StarParticle.swift in Sources */,
 				A13686DC2647C7E2009DC3C2 /* LogoViewController.swift in Sources */,
 				A1EC5C712642AB2F002B2639 /* InfoViewController.swift in Sources */,
 				A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */,

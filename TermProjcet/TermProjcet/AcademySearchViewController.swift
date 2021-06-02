@@ -79,19 +79,21 @@ class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableV
         eduButton.layer.borderColor = UIColor.black.cgColor
         eduButton.layer.cornerRadius = 10
         
+        /*
         schoollevelButton.layer.borderWidth = 2
         schoollevelButton.layer.borderColor = UIColor.black.cgColor
         schoollevelButton.layer.cornerRadius = 10
+         */
         //schoolTableView.isHidden = true
         
         edudropDown.dataSource = ["서울특별시교육청","부산광역시교육청", "대구광역시교육청", "인천광역시교육청", "광주광역시교육청", "대전광역시교육청", "울산광역시교육청", "세종특별자치시교육청", "경기도교육청", "강원도교육청", "충청북도교육청", "충청남도교육청", "전라북도교육청", "전라남도교육청", "경상북도교육청", "경상남도교육청", "제주특별자치도교육청" ]
         edudropDown.anchorView = eduButton
         edudropDown.bottomOffset = CGPoint(x: 0, y: (edudropDown.anchorView?.plainView.bounds.height)!)
-        
+        /*
         leveldropDown.dataSource = ["전체", "고등학교","중학교", "초등학교", "특수학교" ]
         leveldropDown.anchorView = schoollevelButton
         leveldropDown.bottomOffset = CGPoint(x: 0, y: (leveldropDown.anchorView?.plainView.bounds.height)!)
-        
+        */
         schoolTableView.delegate = self
         schoolTableView.dataSource = self
     }
@@ -99,12 +101,14 @@ class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableV
     func beginParsing()
     {
         let eduurl = eduDic[eduButton.currentTitle!]
+        /*
         var levelurl = schoollevelButton.currentTitle ?? "전체"
         if levelurl == "전체" {
             levelurl = ""
         } else {
             levelurl = "&SCHUL_KND_SC_NM="+levelurl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
         }
+ */
         var searchurl = searchText.text ?? ""
         if searchurl != "" {
             searchurl = "&ACA_NM=" + searchurl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!

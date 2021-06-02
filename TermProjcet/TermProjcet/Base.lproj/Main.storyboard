@@ -854,19 +854,6 @@
                                     <action selector="eduSelecet:" destination="vYL-cZ-t8q" eventType="touchUpInside" id="HIv-Ae-EeO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKo-VG-ig1">
-                                <rect key="frame" x="312" y="110" width="82" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="전체">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="eduSelecet:" destination="vYL-cZ-t8q" eventType="touchUpInside" id="cSU-fw-vvl"/>
-                                    <action selector="schoolLevelSelect:" destination="vYL-cZ-t8q" eventType="touchUpInside" id="NOa-5g-iXz"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="학원명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZO-Jc-m7M">
                                 <rect key="frame" x="14" y="161" width="60" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -876,13 +863,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="교육청" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fng-zY-6Pf">
                                 <rect key="frame" x="14" y="108" width="60" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="학원종류" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHd-mb-SFO">
-                                <rect key="frame" x="235" y="108" width="76" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -923,7 +903,6 @@
                     <connections>
                         <outlet property="eduButton" destination="GdL-bw-1mo" id="cbz-Ek-wcj"/>
                         <outlet property="schoolTableView" destination="IbC-QD-wfB" id="nyF-Yc-BVp"/>
-                        <outlet property="schoollevelButton" destination="EKo-VG-ig1" id="gdI-yW-Ihr"/>
                         <outlet property="searchButton" destination="7Gx-6h-0cS" id="vkP-aS-djQ"/>
                         <outlet property="searchText" destination="hty-IO-a9L" id="6oU-uC-v1Z"/>
                     </connections>
