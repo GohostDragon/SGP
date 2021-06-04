@@ -8,12 +8,14 @@
 import UIKit
 import Gifu
 import DropDown
+import Speech
 
 class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var eduButton: UIButton!
     @IBOutlet weak var schoollevelButton: UIButton!
     @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var speechButton: UIButton!
     
     @IBOutlet weak var searchText: UITextField!
     
@@ -43,6 +45,84 @@ class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableV
     var fare = NSMutableString()
     var kind = NSMutableString()
     var estdate = NSMutableString()
+
+    private let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "ko-KR"))!
+    private var speechRecognitionRequest: SFSpeechAudioBufferRecognitionRequest?
+    private var speechRecognitionTask: SFSpeechRecognitionTask?
+    private let audioEngine = AVAudioEngine()
+    
+    @IBAction func speechSearching(_ sender: Any) {
+        if audioEngine.isRunning {
+            audioEngine.stop()
+            speechRecognitionRequest?.endAudio()
+            speechButton.tintColor = UIColor.black
+        } else {
+            try! startSession()
+            speechButton.tintColor = UIColor.gray
+        }
+    }
+    
+    func startSession() throws {
+        if let recognitionTask = speechRecognitionTask {
+            recognitionTask.cancel()
+            self.speechRecognitionTask = nil
+        }
+        let audioSession = AVAudioSession.sharedInstance()
+        try audioSession.setCategory(AVAudioSession.Category.record)
+        speechRecognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        guard let recognitionRequest = speechRecognitionRequest else
+            { fatalError("SFSpeechAudioBufferRecognitionRequest object creation failed") }
+        
+        let inputNode = audioEngine.inputNode
+        recognitionRequest.shouldReportPartialResults = true
+        speechRecognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
+            var finished = false
+            if let result = result {
+                self.searchText.text = result.bestTranscription.formattedString
+                finished = result.isFinal
+            }
+            
+            if error != nil || finished {
+                self.audioEngine.stop()
+                inputNode.removeTap(onBus: 0)
+                self.speechRecognitionRequest = nil
+                self.speechRecognitionTask = nil
+                self.speechButton.isEnabled = true
+            }
+        }
+        let recordingFormat = inputNode.outputFormat(forBus: 0)
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
+            self.speechRecognitionRequest?.append(buffer)
+        }
+        
+        audioEngine.prepare()
+        try audioEngine.start()
+    }
+    
+    func authorizeSR(){
+        SFSpeechRecognizer.requestAuthorization { authStatus in
+            OperationQueue.main.addOperation {
+                switch authStatus{
+                case .authorized:
+                    self.speechButton.isEnabled = true
+                    
+                case .denied:
+                    self.speechButton.isEnabled = false
+                    self.speechButton.setTitle("Speech recognition access denied by user", for: .disabled)
+                    
+                case .restricted:
+                    self.speechButton.isEnabled = false
+                    self.speechButton.setTitle("Speech recognition restricted on device", for: .disabled)
+                    
+                case .notDetermined:
+                    self.speechButton.isEnabled = false
+                    self.speechButton.setTitle("Speech recognition not authorized", for: .disabled)
+                @unknown default:
+                    break
+                }
+            }
+        }
+    }
     
     @IBAction func doneToAcademySearchViewController(segue:UIStoryboardSegue){
     }

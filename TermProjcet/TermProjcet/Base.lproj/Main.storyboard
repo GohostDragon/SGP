@@ -878,7 +878,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hty-IO-a9L">
-                                <rect key="frame" x="76" y="166" width="263" height="34"/>
+                                <rect key="frame" x="76" y="166" width="223" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no"/>
@@ -895,6 +895,15 @@
                                     <segue destination="luw-A6-dSe" kind="presentation" modalPresentationStyle="fullScreen" id="8ZI-pD-645"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMJ-ZR-V7u">
+                                <rect key="frame" x="304" y="163" width="41" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="mic.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="speechSearching:" destination="vYL-cZ-t8q" eventType="touchUpInside" id="60Z-6p-wVw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0iJ-uX-AXH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -905,6 +914,7 @@
                         <outlet property="schoolTableView" destination="IbC-QD-wfB" id="nyF-Yc-BVp"/>
                         <outlet property="searchButton" destination="7Gx-6h-0cS" id="vkP-aS-djQ"/>
                         <outlet property="searchText" destination="hty-IO-a9L" id="6oU-uC-v1Z"/>
+                        <outlet property="speechButton" destination="OMJ-ZR-V7u" id="umg-Ct-WCJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ib-RM-Ag0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -954,6 +964,7 @@
         <image name="logobg.gif" width="800" height="600"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="meal.png" width="200" height="200"/>
+        <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="world-click-512.png" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
