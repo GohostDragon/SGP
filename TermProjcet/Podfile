@@ -13,5 +13,7 @@ target 'TermProjcet' do
   pod 'MaterialComponents/BottomSheet' 
   pod 'Charts'
   pod 'YouTubePlayer'
+  pod 'Tabman', '~> 2.9'
+  pod 'Toast-Swift', '~> 5.0.1'
 
 end

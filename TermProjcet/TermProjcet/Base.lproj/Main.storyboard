@@ -407,7 +407,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXC-2j-Yt2">
-                                <rect key="frame" x="155" y="789" width="105" height="51"/>
+                                <rect key="frame" x="151" y="736" width="105" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -428,6 +428,17 @@
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS4-GU-p0Y">
+                                <rect key="frame" x="20" y="832" width="43" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.58680474760000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="info:" destination="GdL-DH-d8l" eventType="touchUpInside" id="2dP-1v-gev"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="37w-OX-pIS"/>
                         <color key="backgroundColor" red="0.99323552849999996" green="0.9584761262" blue="0.8538663983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -458,6 +469,7 @@
                     <connections>
                         <segue destination="qli-Aq-K6U" kind="relationship" relationship="viewControllers" id="mc3-Hp-ybj"/>
                         <segue destination="UzZ-Xj-XdI" kind="relationship" relationship="viewControllers" id="oqV-qK-9Fw"/>
+                        <segue destination="wJq-19-69V" kind="relationship" relationship="viewControllers" id="u4d-7y-AVQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebO-7k-dqu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -682,11 +694,11 @@
             </objects>
             <point key="canvasLocation" x="5086.9565217391309" y="-733.25892857142856"/>
         </scene>
-        <!--Item-->
+        <!--학교-->
         <scene sceneID="q4J-jb-ZZp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qli-Aq-K6U" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="WtP-KJ-FND"/>
+                    <tabBarItem key="tabBarItem" title="학교" image="highlighter" catalog="system" id="WtP-KJ-FND"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5XB-0z-4uw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -921,11 +933,11 @@
             </objects>
             <point key="canvasLocation" x="1444.9275362318842" y="47.544642857142854"/>
         </scene>
-        <!--Item-->
+        <!--학원-->
         <scene sceneID="ALb-4h-gKk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UzZ-Xj-XdI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yf5-hW-Qpm"/>
+                    <tabBarItem key="tabBarItem" title="학원" image="building.columns" catalog="system" id="yf5-hW-Qpm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r7t-z4-IRa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -939,6 +951,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhc-TW-roK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="535" y="48"/>
+        </scene>
+        <!--Lecture Table View Controller-->
+        <scene sceneID="e0E-mb-y9Z">
+            <objects>
+                <tableViewController id="n36-zL-XM6" customClass="LectureTableViewController" customModule="TermProjcet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FYK-tu-7vG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="LectureCell" rowHeight="461" id="9t3-cr-hM0" customClass="LectureCell" customModule="TermProjcet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="461"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9t3-cr-hM0" id="8tw-t9-BJ8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-hB-mc2" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                            <rect key="frame" x="7" y="63" width="399" height="266"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1강 ㅁㅁㅁㅁㅁ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="188-Xy-vEg">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="188-Xy-vEg" id="6jX-st-7VG"/>
+                                    <outlet property="youtubeView" destination="u5X-hB-mc2" id="WDm-uS-WOJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="n36-zL-XM6" id="ncs-0J-ON6"/>
+                            <outlet property="delegate" destination="n36-zL-XM6" id="pFM-Pf-ihd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Pfg-8y-n4J"/>
+                    <connections>
+                        <outlet property="tableview" destination="FYK-tu-7vG" id="cZK-b5-XMF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVW-Sa-ejq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444.9275362318842" y="1824.7767857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kOU-XH-oII">
@@ -958,16 +1020,41 @@
             </objects>
             <point key="canvasLocation" x="2438" y="986"/>
         </scene>
+        <!--인강-->
+        <scene sceneID="eoC-tk-ggA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wJq-19-69V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="인강" image="play.rectangle" catalog="system" id="r0L-OG-nr3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NHx-cL-Eas">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="n36-zL-XM6" kind="relationship" relationship="rootViewController" id="G4T-PT-7MB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xO-FC-rKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534.78260869565224" y="1824.7767857142856"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="building.columns" catalog="system" width="128" height="113"/>
         <image name="favorite_icon.png" width="512" height="512"/>
+        <image name="highlighter" catalog="system" width="128" height="119"/>
         <image name="logobg.gif" width="800" height="600"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="meal.png" width="200" height="200"/>
         <image name="mic.fill" catalog="system" width="108" height="128"/>
+        <image name="play.rectangle" catalog="system" width="128" height="93"/>
         <image name="world-click-512.png" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

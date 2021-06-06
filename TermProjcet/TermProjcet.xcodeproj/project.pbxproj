@@ -11,6 +11,7 @@
 		A104C935265837F700912A79 /* world-click-512.png in Resources */ = {isa = PBXBuildFile; fileRef = A104C934265837F700912A79 /* world-click-512.png */; };
 		A109B7082667E46F00FA288E /* StarParticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109B7072667E46F00FA288E /* StarParticle.swift */; };
 		A109B70B2667E57500FA288E /* icons8-star-48.png in Resources */ = {isa = PBXBuildFile; fileRef = A109B70A2667E57500FA288E /* icons8-star-48.png */; };
+		A10C9D9B266AA66300B76187 /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10C9D9A266AA66300B76187 /* LectureViewController.swift */; };
 		A118A0C72646FA0F00778DCD /* SchoolInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */; };
 		A118A0CA264711A700778DCD /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0C9264711A600778DCD /* School.swift */; };
 		A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A118A0CC2647146400778DCD /* SchoolMapData.swift */; };
@@ -19,6 +20,7 @@
 		A13686DF2647D203009DC3C2 /* meal.png in Resources */ = {isa = PBXBuildFile; fileRef = A13686DE2647D203009DC3C2 /* meal.png */; };
 		A13686E22647FECB009DC3C2 /* SchoolWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13686E12647FECB009DC3C2 /* SchoolWebViewController.swift */; };
 		A138821F2653A6F300038DAE /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138821E2653A6F300038DAE /* Favorite.swift */; };
+		A14A4BC9266CC0AA00D44B95 /* LectureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A4BC8266CC0AA00D44B95 /* LectureTableViewController.swift */; };
 		A1E3A5E92643062D00A0F454 /* hello.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A5E82643062D00A0F454 /* hello.gif */; };
 		A1EC29E32655E12300B16448 /* AcademySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC29E22655E12300B16448 /* AcademySearchViewController.swift */; };
 		A1EC29E62655E32500B16448 /* FavoriteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC29E52655E32500B16448 /* FavoriteInfoViewController.swift */; };
@@ -43,6 +45,7 @@
 		A104C934265837F700912A79 /* world-click-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "world-click-512.png"; sourceTree = "<group>"; };
 		A109B7072667E46F00FA288E /* StarParticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarParticle.swift; sourceTree = "<group>"; };
 		A109B70A2667E57500FA288E /* icons8-star-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-star-48.png"; sourceTree = "<group>"; };
+		A10C9D9A266AA66300B76187 /* LectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewController.swift; sourceTree = "<group>"; };
 		A118A0C62646FA0F00778DCD /* SchoolInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolInfoViewController.swift; sourceTree = "<group>"; };
 		A118A0C9264711A600778DCD /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		A118A0CC2647146400778DCD /* SchoolMapData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMapData.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		A13686DE2647D203009DC3C2 /* meal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal.png; sourceTree = "<group>"; };
 		A13686E12647FECB009DC3C2 /* SchoolWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolWebViewController.swift; sourceTree = "<group>"; };
 		A138821E2653A6F300038DAE /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		A14A4BC8266CC0AA00D44B95 /* LectureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureTableViewController.swift; sourceTree = "<group>"; };
 		A1E3A5E82643062D00A0F454 /* hello.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello.gif; sourceTree = "<group>"; };
 		A1EC29E22655E12300B16448 /* AcademySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademySearchViewController.swift; sourceTree = "<group>"; };
 		A1EC29E52655E32500B16448 /* FavoriteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInfoViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				A1EC29E82655E9FC00B16448 /* AcademyViewController.swift */,
 				A1EC29EB2655F91000B16448 /* Academy.swift */,
 				A109B7072667E46F00FA288E /* StarParticle.swift */,
+				A10C9D9A266AA66300B76187 /* LectureViewController.swift */,
+				A14A4BC8266CC0AA00D44B95 /* LectureTableViewController.swift */,
 			);
 			path = TermProjcet;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				A1EC29EC2655F91000B16448 /* Academy.swift in Sources */,
 				A1F417D22644472C00B5F571 /* SchoolSearchViewController.swift in Sources */,
 				A1EC29E62655E32500B16448 /* FavoriteInfoViewController.swift in Sources */,
+				A10C9D9B266AA66300B76187 /* LectureViewController.swift in Sources */,
 				A1EC29E32655E12300B16448 /* AcademySearchViewController.swift in Sources */,
 				A118A0C72646FA0F00778DCD /* SchoolInfoViewController.swift in Sources */,
 				A1EC5C5426429212002B2639 /* AppDelegate.swift in Sources */,
@@ -291,6 +298,7 @@
 				A13686DC2647C7E2009DC3C2 /* LogoViewController.swift in Sources */,
 				A1EC5C712642AB2F002B2639 /* InfoViewController.swift in Sources */,
 				A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */,
+				A14A4BC9266CC0AA00D44B95 /* LectureTableViewController.swift in Sources */,
 				A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

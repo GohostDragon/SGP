@@ -7,11 +7,15 @@
 
 import UIKit
 import Gifu
+import Toast_Swift
 
 class LogoViewController: UIViewController {
 
     @IBOutlet weak var logoImage: GIFImageView!
     @IBOutlet weak var startButton: UIButton!
+    @IBAction func info(_ sender: Any) {
+        self.view.makeToast("스마트폰게임 프로그래밍 텀프로젝트입니다.", duration: 2.0, point: CGPoint(x: 200, y: 500), title: "App 소개", image: UIImage(named: "hello.gif"), style: .init(), completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

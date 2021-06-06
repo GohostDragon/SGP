@@ -34,6 +34,10 @@ PODS:
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
+  - Pageboy (3.6.2)
+  - Tabman (2.11.1):
+    - Pageboy (~> 3.6.0)
+  - Toast-Swift (5.0.1)
   - YouTubePlayer (0.7.2)
 
 DEPENDENCIES:
@@ -42,6 +46,8 @@ DEPENDENCIES:
   - FSCalendar
   - Gifu
   - MaterialComponents/BottomSheet
+  - Tabman (~> 2.9)
+  - Toast-Swift (~> 5.0.1)
   - YouTubePlayer
 
 SPEC REPOS:
@@ -51,6 +57,9 @@ SPEC REPOS:
     - FSCalendar
     - Gifu
     - MaterialComponents
+    - Pageboy
+    - Tabman
+    - Toast-Swift
     - YouTubePlayer
 
 SPEC CHECKSUMS:
@@ -59,8 +68,11 @@ SPEC CHECKSUMS:
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   Gifu: 97c2a3c3865fbc834ab13f797e2e8e7729a1853c
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
+  Tabman: 792ac76fd1ec95af175c93db880a3c47cabedc91
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
   YouTubePlayer: 2b5f2830d8f9b2cde942083211291e382c9e6bd5
 
-PODFILE CHECKSUM: 26c4ee12bc325f2f21496eb3c0cfea24c92e08a1
+PODFILE CHECKSUM: 6e04a1327955ee220bc24ea7b9b91f06d93e2e8c
 
 COCOAPODS: 1.10.1
