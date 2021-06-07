@@ -952,56 +952,6 @@
             </objects>
             <point key="canvasLocation" x="535" y="48"/>
         </scene>
-        <!--Lecture Table View Controller-->
-        <scene sceneID="e0E-mb-y9Z">
-            <objects>
-                <tableViewController id="n36-zL-XM6" customClass="LectureTableViewController" customModule="TermProjcet" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FYK-tu-7vG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="LectureCell" rowHeight="461" id="9t3-cr-hM0" customClass="LectureCell" customModule="TermProjcet" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="461"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9t3-cr-hM0" id="8tw-t9-BJ8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-hB-mc2" customClass="YouTubePlayerView" customModule="YouTubePlayer">
-                                            <rect key="frame" x="7" y="63" width="399" height="266"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1강 ㅁㅁㅁㅁㅁ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="188-Xy-vEg">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="67"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="title" destination="188-Xy-vEg" id="6jX-st-7VG"/>
-                                    <outlet property="youtubeView" destination="u5X-hB-mc2" id="WDm-uS-WOJ"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="n36-zL-XM6" id="ncs-0J-ON6"/>
-                            <outlet property="delegate" destination="n36-zL-XM6" id="pFM-Pf-ihd"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Pfg-8y-n4J"/>
-                    <connections>
-                        <outlet property="tableview" destination="FYK-tu-7vG" id="cZK-b5-XMF"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVW-Sa-ejq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1444.9275362318842" y="1824.7767857142856"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="kOU-XH-oII">
             <objects>
@@ -1032,12 +982,178 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="n36-zL-XM6" kind="relationship" relationship="rootViewController" id="G4T-PT-7MB"/>
+                        <segue destination="H3a-GU-Nhg" kind="relationship" relationship="rootViewController" id="pOi-Fd-5vm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0xO-FC-rKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="534.78260869565224" y="1824.7767857142856"/>
+        </scene>
+        <!--Lecture Page View Controller-->
+        <scene sceneID="Cdq-Bi-3a5">
+            <objects>
+                <viewController id="H3a-GU-Nhg" customClass="LecturePageViewController" customModule="TermProjcet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FQb-oc-Hq5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bJa-I3-7SB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MAc-yT-RzE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="woO-A0-bzf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="1825"/>
+        </scene>
+        <!--Lecture Table View Controller-->
+        <scene sceneID="PDp-k2-Hes">
+            <objects>
+                <tableViewController storyboardIdentifier="Lecture1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IBL-bS-DXx" customClass="LectureTableViewController" customModule="TermProjcet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lti-Xs-pCt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="LectureCell" rowHeight="461" id="CrI-lM-3IR" customClass="LectureCell" customModule="TermProjcet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="461"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CrI-lM-3IR" id="V3S-cN-BuZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHs-cU-uCa" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                            <rect key="frame" x="7" y="63" width="399" height="266"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1강 ㅁㅁㅁㅁㅁ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDN-mL-aCQ">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="EDN-mL-aCQ" id="m52-0u-Ttx"/>
+                                    <outlet property="youtubeView" destination="uHs-cU-uCa" id="7EB-C6-Z4o"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IBL-bS-DXx" id="PyR-IS-nAw"/>
+                            <outlet property="delegate" destination="IBL-bS-DXx" id="KsD-5Q-OgS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eeC-uP-2Q9"/>
+                    <connections>
+                        <outlet property="tableview" destination="Lti-Xs-pCt" id="0FE-i5-aFE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKL-RY-4NM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2325" y="1825"/>
+        </scene>
+        <!--LectureT 2able View Controller-->
+        <scene sceneID="81x-Do-qLn">
+            <objects>
+                <tableViewController storyboardIdentifier="Lecture2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="084-n2-48z" customClass="LectureT2ableViewController" customModule="TermProjcet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kQN-hU-onc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="LectureCell2" rowHeight="461" id="11m-nh-IYJ" customClass="LectureCell2" customModule="TermProjcet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="461"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="11m-nh-IYJ" id="aVY-Ia-21g">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbv-Sy-Spa" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                            <rect key="frame" x="7" y="63" width="399" height="266"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1강 ㅁㅁㅁㅁㅁ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuW-A5-4XI">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="NuW-A5-4XI" id="fdK-hv-yn0"/>
+                                    <outlet property="youtubeView" destination="wbv-Sy-Spa" id="RrZ-x7-XjN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="084-n2-48z" id="hEF-mR-gJI"/>
+                            <outlet property="delegate" destination="084-n2-48z" id="veM-zY-BmZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="nxY-FS-aZp"/>
+                    <connections>
+                        <outlet property="tableview" destination="kQN-hU-onc" id="fAv-Ga-3KW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wVE-1P-OxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3181" y="1825"/>
+        </scene>
+        <!--LectureT 3able View Controller-->
+        <scene sceneID="LR0-cw-6tW">
+            <objects>
+                <tableViewController storyboardIdentifier="Lecture3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HzH-h7-80P" customClass="LectureT3ableViewController" customModule="TermProjcet" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2VF-xQ-NGL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="20" reuseIdentifier="LectureCell3" rowHeight="461" id="rxz-be-B5S" customClass="LectureCell3" customModule="TermProjcet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="461"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rxz-be-B5S" id="XZ8-r4-zWT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="461"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAb-PN-Ebs" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                            <rect key="frame" x="7" y="63" width="399" height="266"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1강 ㅁㅁㅁㅁㅁ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPD-xs-cun">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="67"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="title" destination="kPD-xs-cun" id="lsE-c2-EJh"/>
+                                    <outlet property="youtubeView" destination="KAb-PN-Ebs" id="7Hk-tl-vTb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HzH-h7-80P" id="CEQ-WQ-fgF"/>
+                            <outlet property="delegate" destination="HzH-h7-80P" id="fq6-cw-BqO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="X1n-WD-kSw"/>
+                    <connections>
+                        <outlet property="tableview" destination="2VF-xQ-NGL" id="Wc7-vW-LwR"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ub2-sm-gTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3971" y="1825"/>
         </scene>
     </scenes>
     <resources>

@@ -22,6 +22,9 @@
 		A138821F2653A6F300038DAE /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138821E2653A6F300038DAE /* Favorite.swift */; };
 		A14A4BC9266CC0AA00D44B95 /* LectureTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A4BC8266CC0AA00D44B95 /* LectureTableViewController.swift */; };
 		A1E3A5E92643062D00A0F454 /* hello.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1E3A5E82643062D00A0F454 /* hello.gif */; };
+		A1E95756266E1510003D6A72 /* LecturePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E95755266E1510003D6A72 /* LecturePageViewController.swift */; };
+		A1E95759266E1C0B003D6A72 /* Lecture2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E95758266E1C0B003D6A72 /* Lecture2TableViewController.swift */; };
+		A1E9575C266E2085003D6A72 /* Lecture3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E9575B266E2085003D6A72 /* Lecture3TableViewController.swift */; };
 		A1EC29E32655E12300B16448 /* AcademySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC29E22655E12300B16448 /* AcademySearchViewController.swift */; };
 		A1EC29E62655E32500B16448 /* FavoriteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC29E52655E32500B16448 /* FavoriteInfoViewController.swift */; };
 		A1EC29E92655E9FC00B16448 /* AcademyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC29E82655E9FC00B16448 /* AcademyViewController.swift */; };
@@ -56,6 +59,9 @@
 		A138821E2653A6F300038DAE /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		A14A4BC8266CC0AA00D44B95 /* LectureTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureTableViewController.swift; sourceTree = "<group>"; };
 		A1E3A5E82643062D00A0F454 /* hello.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hello.gif; sourceTree = "<group>"; };
+		A1E95755266E1510003D6A72 /* LecturePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LecturePageViewController.swift; sourceTree = "<group>"; };
+		A1E95758266E1C0B003D6A72 /* Lecture2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture2TableViewController.swift; sourceTree = "<group>"; };
+		A1E9575B266E2085003D6A72 /* Lecture3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture3TableViewController.swift; sourceTree = "<group>"; };
 		A1EC29E22655E12300B16448 /* AcademySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademySearchViewController.swift; sourceTree = "<group>"; };
 		A1EC29E52655E32500B16448 /* FavoriteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInfoViewController.swift; sourceTree = "<group>"; };
 		A1EC29E82655E9FC00B16448 /* AcademyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 				A109B7072667E46F00FA288E /* StarParticle.swift */,
 				A10C9D9A266AA66300B76187 /* LectureViewController.swift */,
 				A14A4BC8266CC0AA00D44B95 /* LectureTableViewController.swift */,
+				A1E95755266E1510003D6A72 /* LecturePageViewController.swift */,
+				A1E95758266E1C0B003D6A72 /* Lecture2TableViewController.swift */,
+				A1E9575B266E2085003D6A72 /* Lecture3TableViewController.swift */,
 			);
 			path = TermProjcet;
 			sourceTree = "<group>";
@@ -286,6 +295,7 @@
 				A1EC5C5826429212002B2639 /* ViewController.swift in Sources */,
 				A1EC29EC2655F91000B16448 /* Academy.swift in Sources */,
 				A1F417D22644472C00B5F571 /* SchoolSearchViewController.swift in Sources */,
+				A1E9575C266E2085003D6A72 /* Lecture3TableViewController.swift in Sources */,
 				A1EC29E62655E32500B16448 /* FavoriteInfoViewController.swift in Sources */,
 				A10C9D9B266AA66300B76187 /* LectureViewController.swift in Sources */,
 				A1EC29E32655E12300B16448 /* AcademySearchViewController.swift in Sources */,
@@ -297,8 +307,10 @@
 				A109B7082667E46F00FA288E /* StarParticle.swift in Sources */,
 				A13686DC2647C7E2009DC3C2 /* LogoViewController.swift in Sources */,
 				A1EC5C712642AB2F002B2639 /* InfoViewController.swift in Sources */,
+				A1E95759266E1C0B003D6A72 /* Lecture2TableViewController.swift in Sources */,
 				A118A0CD2647146400778DCD /* SchoolMapData.swift in Sources */,
 				A14A4BC9266CC0AA00D44B95 /* LectureTableViewController.swift in Sources */,
+				A1E95756266E1510003D6A72 /* LecturePageViewController.swift in Sources */,
 				A1EC5C5626429212002B2639 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
