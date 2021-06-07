@@ -9,6 +9,7 @@ import UIKit
 import Gifu
 import DropDown
 import Speech
+import Toast_Swift
 
 class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableViewDataSource, UITableViewDelegate {
 
@@ -59,6 +60,9 @@ class AcademySearchViewController: UIViewController, XMLParserDelegate, UITableV
         } else {
             try! startSession()
             speechButton.tintColor = UIColor.gray
+            self.view.makeToast("마이크에 소리를 입력해주세요.", duration: 0.8, point: CGPoint(x: 200, y: 300), title: "마이크", image: nil, style: .init(), completion: nil)
+            //self.view.makeToast("마이크에 소리를 입력해주세요", point: CGPoint(x: 300, y: 100), title: "마이크", image: nil, completion: nil)
+            //self.view.makeToast("마이크에 소리를 입력해주세요.")
         }
     }
     
